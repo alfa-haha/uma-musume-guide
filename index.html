@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Musume Guide - Character Comparison & Beginner Tips</title>
+    <meta name="description" content="Compare Uma Musume characters, stats, and skills. Complete beginner guide for Pretty Derby players.">
+    <meta name="keywords" content="uma musume, pretty derby, character comparison, guide, stats, horse girls">
+    <meta name="author" content="Uma Musume Guide">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://umamusumeguide.co/">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Uma Musume Guide - Character Comparison Tool">
+    <meta property="og:description" content="Compare Uma Musume characters and find the best team composition">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://umamusumeguide.co/">
+    <meta property="og:image" content="https://umamusumeguide.co/assets/images/meta/og-image.jpg">
+    <meta property="og:site_name" content="Uma Musume Guide">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Uma Musume Guide - Character Comparison Tool">
+    <meta name="twitter:description" content="Compare Uma Musume characters and find the best team composition">
+    <meta name="twitter:image" content="https://umamusumeguide.co/assets/images/meta/og-image.jpg">
+    
+    <!-- Favicon and app icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Uma Musume Guide",
+      "url": "https://umamusumeguide.co/",
+      "description": "Compare Uma Musume characters, stats, and skills. Complete beginner guide for Pretty Derby players.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://umamusumeguide.co/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Uma Musume Guide</h1>
+            <p class="site-description">Your ultimate resource for Uma Musume Pretty Derby character comparison and guides</p>
+            <nav aria-label="Main navigation" class="main-nav">
+                <a href="#comparison" class="nav-link">Character Comparison</a>
+                <a href="beginner-guide.html" class="nav-link">Beginner Guide</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="main-content">
+        <section id="comparison" aria-labelledby="comparison-heading" class="comparison-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="comparison-heading">Compare Characters</h2>
+                    <p class="section-description">Select up to 4 Uma Musume characters to compare their stats, skills, and abilities side by side.</p>
+                </header>
+                
+                <div class="character-selector" id="character-selector">
+                    
+                    <div class="search-and-filters">
+                        <div class="search-container">
+                            <input type="text" id="character-search" placeholder="Search characters..." class="search-input">
+                            <button type="button" class="search-clear" id="search-clear" aria-label="Clear search">×</button>
+                        </div>
+                        
+                        <div class="filter-container">
+                            <select id="type-filter" class="filter-select">
+                                <option value="">All Types</option>
+                                <option value="speed">Speed</option>
+                                <option value="stamina">Stamina</option>
+                                <option value="power">Power</option>
+                                <option value="guts">Guts</option>
+                                <option value="wisdom">Wisdom</option>
+                            </select>
+                            
+                            <select id="rarity-filter" class="filter-select">
+                                <option value="">All Rarities</option>
+                                <option value="1">1 Star</option>
+                                <option value="2">2 Star</option>
+                                <option value="3">3 Star</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div class="character-list" id="character-list">
+                        <div class="loading-message">
+                            <div class="loading-spinner"></div>
+                            Loading characters...
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comparison-table-container" id="comparison-table-container" style="display: none;">
+                    <div class="comparison-table-wrapper">
+                        <table class="comparison-table" id="comparison-table">
+                            <thead id="comparison-table-head">
+                                <!-- Table header will be dynamically generated -->
+                            </thead>
+                            <tbody id="comparison-table-body">
+                                <!-- Table body will be dynamically generated -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="comparison-grid" id="comparison-grid">
+                    <div class="grid-placeholder">
+                        <p>Selected characters will appear here for detailed comparison.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section aria-labelledby="guide-heading" class="guide-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="guide-heading">Uma Musume Beginner Guides</h2>
+                    <p class="section-description">Master Uma Musume Pretty Derby with our comprehensive beginner guides. From basic gameplay to advanced strategies.</p>
+                </header>
+                
+                <div class="blog-cards-grid">
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="assets/images/blog/thumbnails/how-to-play-cover-thumb.jpg" 
+                                 alt="How to Play Uma Musume Guide" 
+                                 class="blog-card-thumbnail"
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-tags">
+                                <span class="blog-card-tag">How to Play</span>
+                                <span class="blog-card-tag">Beginner</span>
+                            </div>
+                            <h3 class="blog-card-title">How to Play Uma Musume? Complete Starter Guide</h3>
+                            <p class="blog-card-excerpt">Learn everything from basic gameplay mechanics to advanced strategies. Perfect introduction for new trainers.</p>
+                            <a href="blog-how-to-play.html" class="blog-card-link">Read More →</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="assets/images/blog/thumbnails/beginner-guider-thumb.jpg" 
+                                 alt="Dominate Early Game Guide" 
+                                 class="blog-card-thumbnail"
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-tags">
+                                <span class="blog-card-tag">Early Game</span>
+                                <span class="blog-card-tag">Strategy</span>
+                            </div>
+                            <h3 class="blog-card-title">Dominate Early Game Like a Pro (2025 Edition)</h3>
+                            <p class="blog-card-excerpt">Master rerolling, character selection, and training optimization to get ahead fast in Uma Musume.</p>
+                            <a href="blog-beginner-guide.html" class="blog-card-link">Read More →</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="assets/images/blog/thumbnails/daily-guide-thumb.jpg" 
+                                 alt="Daily Must-Do Guide" 
+                                 class="blog-card-thumbnail"
+                                 loading="lazy">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-tags">
+                                <span class="blog-card-tag">Daily Tasks</span>
+                                <span class="blog-card-tag">Optimization</span>
+                            </div>
+                            <h3 class="blog-card-title">Daily Must-Do Guide for New Trainers</h3>
+                            <p class="blog-card-excerpt">Essential daily tasks and strategies to maximize your progress with friends, circles, and resource management.</p>
+                            <a href="blog-daily-guide.html" class="blog-card-link">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="guide-hub-cta">
+                    <a href="beginner-guide.html" class="hub-button">
+                        <span class="hub-button-text">View All Beginner Guides</span>
+                        <span class="hub-button-icon">📚</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Uma Musume Guide. All rights reserved.</p>
+            <p class="disclaimer">This site is not affiliated with Cygames or Uma Musume Pretty Derby.</p>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

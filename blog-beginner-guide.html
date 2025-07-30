@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Musume Beginner Guide: How to Dominate Early Game Like a Pro (2025 Edition)</title>
+    <meta name="description"
+        content="A comprehensive Uma Musume beginner guide covering first steps, character selection, training, team building, and endgame tips for new players.">
+    <meta name="keywords"
+        content="uma musume, beginner guide, pretty derby, training, characters, team building, URA finals">
+    <meta name="author" content="Uma Musume Guide">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://umamusumeguide.co/">
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Uma Musume Beginner Guide: How to Dominate Early Game Like a Pro">
+    <meta property="og:description"
+        content="Complete beginner guide for Uma Musume Pretty Derby with tips on character selection, training, and team building">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://umamusumeguide.co/blog-beginner-guide.html">
+    <meta property="og:image" content="https://umamusumeguide.co/assets/images/blog/covers/beginner-guider-cover.jpg">
+    <meta property="og:site_name" content="Uma Musume Guide">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Uma Musume Beginner Guide: How to Dominate Early Game Like a Pro">
+    <meta name="twitter:description"
+        content="Complete beginner guide for Uma Musume Pretty Derby with tips on character selection, training, and team building">
+    <meta name="twitter:image" content="https://umamusumeguide.co/assets/images/blog/covers/beginner-guider-cover.jpg">
+
+    <!-- Favicon and app icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Structured data for blog post -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Uma Musume Beginner Guide: How to Dominate Early Game Like a Pro (2025 Edition)",
+      "description": "A comprehensive Uma Musume beginner guide covering first steps, character selection, training, team building, and endgame tips for new players.",
+      "author": {
+        "@type": "Organization",
+        "name": "Uma Musume Guide"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Uma Musume Guide"
+      },
+      "datePublished": "2025-01-29",
+      "dateModified": "2025-01-29",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://umamusumeguide.co/blog-beginner-guide.html"
+      },
+      "image": "https://umamusumeguide.co/assets/images/meta/og_image_guide.jpg"
+    }
+    </script>
+
+    <style>
+        /* Blog-specific styles */
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xxl);
+            padding: var(--spacing-xl) 0;
+        }
+
+        .blog-title {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            color: var(--primary-pink);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.2;
+        }
+
+        .blog-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            font-style: italic;
+            margin-bottom: var(--spacing-lg);
+            padding: var(--spacing-md);
+            background: var(--pale-pink);
+            border-left: 4px solid var(--primary-pink);
+            border-radius: var(--radius-sm);
+        }
+
+        .blog-meta {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-lg);
+            flex-wrap: wrap;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .blog-tag {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: var(--radius-lg);
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition-normal);
+        }
+
+        .blog-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-sm);
+            color: var(--white);
+        }
+
+        .blog-cover {
+            margin-bottom: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 2px solid var(--soft-pink);
+        }
+        
+        .cover-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition-normal);
+        }
+        
+        .cover-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .blog-content {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-xxl);
+            box-shadow: var(--shadow-lg);
+            border: 2px solid var(--soft-pink);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+
+        .table-of-contents {
+            background: var(--gradient-accent);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-lg);
+            margin-bottom: var(--spacing-xxl);
+            border: 2px solid var(--light-pink);
+        }
+
+        .toc-title {
+            color: var(--primary-pink);
+            font-size: 1.3rem;
+            margin-bottom: var(--spacing-md);
+            text-align: center;
+        }
+
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc-item {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .toc-link {
+            color: var(--deep-pink);
+            text-decoration: none;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            transition: var(--transition-normal);
+            display: block;
+        }
+
+        .toc-link:hover {
+            background: var(--white);
+            color: var(--primary-pink);
+            transform: translateX(8px);
+        }
+
+        .blog-section {
+            margin-bottom: var(--spacing-xxl);
+            scroll-margin-top: 100px;
+        }
+
+        .section-title {
+            color: var(--primary-pink);
+            font-size: 1.8rem;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 3px solid var(--light-pink);
+            position: relative;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-primary);
+        }
+
+        .subsection-title {
+            color: var(--deep-pink);
+            font-size: 1.4rem;
+            margin: var(--spacing-xl) 0 var(--spacing-md) 0;
+        }
+
+        .highlight-box {
+            background: var(--pale-pink);
+            border-left: 4px solid var(--primary-pink);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            border-radius: var(--radius-sm);
+        }
+
+        .pro-tip {
+            background: linear-gradient(135deg, var(--sky-blue), var(--light-pink));
+            color: var(--white);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            margin: var(--spacing-lg) 0;
+            font-weight: 500;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--spacing-lg) 0;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .comparison-table th {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: var(--spacing-md);
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: var(--spacing-md);
+            border-bottom: 1px solid var(--medium-gray);
+        }
+
+        .comparison-table tr:hover {
+            background: var(--pale-pink);
+        }
+
+        .emoji {
+            font-size: 1.2em;
+            margin-right: var(--spacing-xs);
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: var(--spacing-xl);
+            right: var(--spacing-xl);
+            background: var(--gradient-primary);
+            color: var(--white);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: var(--transition-normal);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .source-attribution {
+            background: var(--light-gray);
+            border: 2px solid var(--medium-gray);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        .source-attribution p {
+            margin: 0;
+        }
+
+        .source-attribution a {
+            color: var(--primary-pink);
+            text-decoration: underline;
+            font-weight: 500;
+            transition: var(--transition-normal);
+        }
+
+        .source-attribution a:hover {
+            color: var(--deep-pink);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .blog-content {
+                padding: var(--spacing-lg);
+            }
+
+            .blog-meta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: var(--spacing-sm);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Uma Musume Guide</h1>
+            <p class="site-description">Your ultimate resource for Uma Musume Pretty Derby character comparison and
+                guides</p>
+            <nav aria-label="Main navigation" class="main-nav">
+                <a href="index.html" class="nav-link">Character Comparison</a>
+                <a href="beginner-guide.html" class="nav-link">Beginner Guide</a>
+                <a href="#" class="nav-link">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="main-content">
+        <div class="blog-container">
+            <nav class="breadcrumb" style="margin-bottom: var(--spacing-lg); text-align: center;">
+                <a href="index.html" style="color: var(--primary-pink); text-decoration: none;">Home</a>
+                <span style="margin: 0 var(--spacing-sm); color: var(--text-gray);">→</span>
+                <a href="index.html" style="color: var(--primary-pink); text-decoration: none; font-weight: 600;">Home</a>
+                <span style="margin: 0 var(--spacing-sm); color: var(--text-gray);">→</span>
+                <span style="color: var(--text-gray);">Early Game Domination Guide</span>
+            </nav>
+            <article class="blog-post">
+                <header class="blog-header">
+                    <h1 class="blog-title">🐴 Uma Musume Beginner Guide: How to Dominate Early Game Like a Pro (2025
+                        Edition)</h1>
+
+                    <div class="blog-subtitle">
+                        A fun, no-BS Uma Musume starter guide from someone who learned it the hard way. Whether you
+                        found this through Reddit, Steam, or just fell into the gacha rabbit hole—this one's for all the
+                        newbies.
+                    </div>
+
+                    <div class="blog-meta">
+                        <span class="blog-tag">Beginner Guide</span>
+                        <span class="blog-tag">Training Tips</span>
+                        <span class="blog-tag">Character Selection</span>
+                        <span class="blog-tag">Team Building</span>
+                        <span class="blog-tag">URA Finals</span>
+                    </div>
+                </header>
+
+                <div class="blog-cover">
+                    <img src="assets/images/blog/covers/beginner-guider-cover.jpg" 
+                         alt="Uma Musume Beginner Guide - How to Dominate Early Game Like a Pro" 
+                         class="cover-image"
+                         loading="lazy">
+                </div>
+                
+                <div class="blog-content">
+                    <div class="table-of-contents">
+                        <h2 class="toc-title">✨ Table of Contents</h2>
+                        <ol class="toc-list">
+                            <li class="toc-item"><a href="#first-steps" class="toc-link">First Steps: Starting the Game
+                                    Right</a></li>
+                            <li class="toc-item"><a href="#best-first-pick" class="toc-link">Best First Pick for
+                                    Starters</a></li>
+                            <li class="toc-item"><a href="#training-101" class="toc-link">Training 101: Getting Strong
+                                    Fast</a></li>
+                            <li class="toc-item"><a href="#powering-up" class="toc-link">Powering Up: Strengthening &
+                                    Upgrades</a></li>
+                            <li class="toc-item"><a href="#team-building" class="toc-link">Team Building & Circles</a>
+                            </li>
+                            <li class="toc-item"><a href="#ura-finals" class="toc-link">Crush URA Finals & Endgame
+                                    Tips</a></li>
+                            <li class="toc-item"><a href="#final-thoughts" class="toc-link">Final Thoughts</a></li>
+                        </ol>
+                    </div>
+
+                    <section id="first-steps" class="blog-section">
+                        <h2 class="section-title">💥 First Steps: Starting the Game Right</h2>
+
+                        <p>If you're reading this Uma Musume beginner guide, congrats—you're officially in too deep.
+                            First things first:</p>
+
+                        <h3 class="subsection-title">🎰 Reroll Like You Mean It</h3>
+
+                        <p>Yes, rerolling is annoying. But if you found this guide on Reddit or Steam, chances are
+                            someone already told you: <strong>rerolling the support card gacha is 100% worth
+                                it.</strong></p>
+
+                        <p>There are two gacha types:</p>
+                        <ul>
+                            <li><strong>Pretty Derby Gacha</strong> → Get new characters to train</li>
+                            <li><strong>Support Card Gacha</strong> → Power up your training with bonus stats, events,
+                                and skills</li>
+                        </ul>
+
+                        <div class="pro-tip">
+                            <strong>Pro tip:</strong> Reroll support cards. Period. Strong cards make your training
+                            sessions way better, especially for newbies looking to get ahead.
+                        </div>
+
+                        <h4 class="subsection-title">Why Support > Characters (Early On)</h4>
+                        <p>Characters are cool, but support cards literally carry your whole run. If you're a beginner,
+                            or following a Uma Musume beginner guide Reddit thread, every top comment will scream:
+                            <strong>support cards first.</strong>
+                        </p>
+
+                        <p>You'll be low on jewels—don't waste them pulling waifus yet.</p>
+                    </section>
+
+                    <section id="best-first-pick" class="blog-section">
+                        <h2 class="section-title">🌟 Best First Pick for Starters</h2>
+
+                        <p>Got that free ⭐️3 character ticket? Open the <strong>Shop → Ticket Exchange</strong> and pick
+                            smart. Here's our top pick:</p>
+
+                        <h3 class="subsection-title">💪 Go With <strong>Oguri Cap</strong></h3>
+
+                        <div class="highlight-box">
+                            <p>She's cracked for beginners:</p>
+                            <ul>
+                                <li>Super flexible across distances (except short)</li>
+                                <li>Has an OP unique skill</li>
+                                <li>+20% Speed growth → makes training a breeze</li>
+                                <li>Works well on dirt tracks early-game (trust me, that matters)</li>
+                            </ul>
+                        </div>
+
+                        <p>If you're coming from a Uma Musume starter guide Reddit search, Oguri is always near the top.
+                        </p>
+
+                        <h4 class="subsection-title">Or Pick Your Best Girl</h4>
+                        <p>Meta is great. Vibes are better. If you love Special Week, Rice Shower, or Twin Turbo, go for
+                            them. You'll unlock:</p>
+                        <ul>
+                            <li>Their storylines</li>
+                            <li>Home screen convos</li>
+                            <li>Live Theater content (the music slaps)</li>
+                        </ul>
+
+                        <p>Play who you like. Period. This is a newbie guide, not a competitive spreadsheet. 🚀</p>
+                    </section>
+
+                    <section id="training-101" class="blog-section">
+                        <h2 class="section-title">🏋️ Training 101: Getting Strong Fast</h2>
+
+                        <h3 class="subsection-title">💡 Match Support Cards to Your Girl</h3>
+
+                        <p>Every Uma Musume has strengths. Match cards to boost what she's already good at:</p>
+                        <ul>
+                            <li>Training Speed? Use Speed-type cards (top-right icon)</li>
+                            <li>Going for long-distance races? Stack stamina + relevant skills</li>
+                        </ul>
+
+                        <p>If you're checking a Uma Musume beginner guide Steam post and don't know what any of this
+                            means yet, don't worry. You'll get it fast.</p>
+
+                        <h3 class="subsection-title">🐎 Training Loop Basics</h3>
+
+                        <p>Once your team is ready:</p>
+                        <ol>
+                            <li>Train your girl</li>
+                            <li>Win races</li>
+                            <li>Get stronger</li>
+                            <li>Unlock story content</li>
+                        </ol>
+
+                        <p>Some stories are adorable. Some are bananas. All worth it.</p>
+
+                        <h3 class="subsection-title">👑 Post-Training = Hall of Fame Time</h3>
+
+                        <p>When you finish training, your Uma goes into the Hall of Fame. From there:</p>
+                        <ul>
+                            <li>She can be inherited by future girls (stats + skills)</li>
+                            <li>She joins your Team Race lineup</li>
+                        </ul>
+
+                        <p>Think of this as breeding idols with better stats. Wild but cool.</p>
+                    </section>
+
+                    <section id="powering-up" class="blog-section">
+                        <h2 class="section-title">✨ Powering Up: Strengthening & Upgrades</h2>
+
+                        <p>Go to <strong>Main Menu → Strengthening</strong> to:</p>
+
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>What</th>
+                                    <th>Why It Matters</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Uma Musume</strong></td>
+                                    <td>Unlock new skills, boost stats, raise skill levels</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Support Cards</strong></td>
+                                    <td>Increase level caps, improve bonus effects, unlock new perks</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 class="subsection-title">✨ Awakening Levels</h3>
+                        <p>Use race rewards + items to unlock skills at levels 1-5. The higher the level, the better
+                            your performance.</p>
+
+                        <h3 class="subsection-title">💎 Talent Blossoming</h3>
+                        <p>Make any Uma Musume hit ⭐️5. You need Pieces (aka dupe currency) from:</p>
+                        <ul>
+                            <li>Goddess Statue exchanges</li>
+                            <li>Limited shop events</li>
+                        </ul>
+                        <p>Hoard them. Always.</p>
+
+                        <h3 class="subsection-title">↗️ Level Up Your Support Cards</h3>
+                        <p>Higher level = stronger training bonuses. Want to stop losing to NPCs named "Trainer Jeff"?
+                            Level those cards.</p>
+
+                        <h3 class="subsection-title">🔓 Unlock Card Level Caps</h3>
+                        <p>Got dupes? Use 'em to uncap. This boosts max level + unlocks new passives. SSR cards
+                            especially.</p>
+                    </section>
+
+                    <section id="team-building" class="blog-section">
+                        <h2 class="section-title">💪 Team Building & Circles</h2>
+
+                        <h3 class="subsection-title">🧠 Build Your Race Team</h3>
+                        <p>Head to <strong>Race → Team Stadium → Team Formation</strong> to slap together your best
+                            girls. You unlock more slots as your rank goes up.</p>
+
+                        <h3 class="subsection-title">☀️ Daily Races + Circles</h3>
+
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Unlock Rank</th>
+                                    <th>Why You Want It</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Daily Races</strong></td>
+                                    <td>Rank E</td>
+                                    <td>Free Support Points + cash — essential for early-game newbies</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Circles</strong></td>
+                                    <td>Rank E3</td>
+                                    <td>Exchange items, donate, borrow support cards, and look cool in your badge flair
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 class="subsection-title">💰 Daily Races = Free Money</h3>
+                        <p>Run three per day. Prioritize Support Points early on. Later, farm money.</p>
+                        <p>Save jewels unless you're in a hurry.</p>
+
+                        <h3 class="subsection-title">👯 Join a Circle</h3>
+                        <p>Trainer Medals from donations let you trade for:</p>
+                        <ul>
+                            <li>Uma Pieces</li>
+                            <li>SSR support cards</li>
+                            <li>Random flex stuff</li>
+                        </ul>
+                        <p>No pressure to chat. Even lurkers get loot.</p>
+                    </section>
+
+                    <section id="ura-finals" class="blog-section">
+                        <h2 class="section-title">🏆 Crush URA Finals & Endgame Tips</h2>
+
+                        <h3 class="subsection-title">🎯 URA Finals = Your Main Goal</h3>
+                        <p>Clear the training route and unlock URA Finals. This is the main challenge.</p>
+
+                        <p>Win it to:</p>
+                        <ul>
+                            <li>Max your Hall of Fame stats</li>
+                            <li>Unlock better inheritance options</li>
+                        </ul>
+
+                        <h3 class="subsection-title">🧪 Farm Mats from Races</h3>
+                        <p>You need race loot for upgrades. Check what each girl requires and farm accordingly.</p>
+
+                        <h3 class="subsection-title">♻️ Inheritance = Gacha Breeding</h3>
+                        <p>Use past Uma Musume to pass on skills/traits. The right parent combo can turn your next girl
+                            into a track monster.</p>
+                    </section>
+
+                    <section id="final-thoughts" class="blog-section">
+                        <h2 class="section-title">🎤 Final Thoughts</h2>
+
+                        <p>So yeah. Whether you're following a Uma Musume beginner guide Reddit thread, scrolling a
+                            Steam review, or just totally lost:</p>
+
+                        <ul>
+                            <li>Reroll smart</li>
+                            <li>Build around supports</li>
+                            <li>Pick your faves</li>
+                            <li>Join a Circle</li>
+                            <li>Vibe with the live shows</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <p>This isn't just a racing game. It's an idol simulator with horse girls and drama that
+                                slaps.</p>
+                            <p><strong>Play however you want. That's the real starter guide secret. 🦤</strong></p>
+                        </div>
+                    </section>
+
+                    <section class="blog-section">
+                        <div style="background: var(--gradient-primary); color: var(--white); padding: var(--spacing-lg); border-radius: var(--radius-md); text-align: center; margin-bottom: var(--spacing-lg);">
+                            <p style="margin-bottom: var(--spacing-sm); font-weight: 600;">📚 Want More Beginner Guides?</p>
+                            <a href="index.html" style="color: var(--white); text-decoration: underline; font-weight: 500;">← Back to Home</a>
+                        </div>
+                        <div class="source-attribution">
+                            <p><strong>Source:</strong> <a href="https://game8.jp/umamusume/372912" target="_blank"
+                                    rel="noopener noreferrer nofollow">Original content from JP Server</a>. Contact me
+                                if you
+                                believe your work has been used inappropriately.</p>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Uma Musume Guide. All rights reserved.</p>
+            <p class="disclaimer">This site is not affiliated with Cygames or Uma Musume Pretty Derby.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // Back to top functionality
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for table of contents links
+        document.querySelectorAll('.toc-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

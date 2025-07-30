@@ -1,0 +1,1941 @@
+{
+  "characters": [
+    {
+      "id": "special_week_original",
+      "name": "Special Week",
+      "nameJp": "スペシャルウィーク",
+      "version": "Original",
+      "rarity": 3,
+      "type": "speed",
+      "stats": {
+        "speed": 85,
+        "stamina": 70,
+        "power": 75,
+        "guts": 80,
+        "wisdom": 65
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 20,
+        "power": 0,
+        "guts": 0,
+        "wisdom": 10
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "F",
+        "mile": "C",
+        "medium": "A",
+        "long": "A",
+        "front": "G",
+        "pace": "A",
+        "late": "A",
+        "end": "C"
+      },
+      "uniqueSkill": {
+        "name": "Shooting Star",
+        "description": "Special Week's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Gourmand",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "In Body and Mind",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Winning Streak",
+          "description": "Increases speed when in the lead",
+          "type": "speed_boost"
+        },
+        {
+          "name": "Final Sprint",
+          "description": "Boosts acceleration in the final stretch",
+          "type": "acceleration"
+        }
+      ],
+      "image": "assets/images/characters/portraits/special_week_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/special_week_original_thumb.jpg"
+    },
+    {
+      "id": "silence_suzuka_original",
+      "name": "Silence Suzuka",
+      "nameJp": "サイレンススズカ",
+      "version": "Original",
+      "rarity": 3,
+      "type": "speed",
+      "stats": {
+        "speed": 90,
+        "stamina": 65,
+        "power": 70,
+        "guts": 75,
+        "wisdom": 70
+      },
+      "bonuses": {
+        "speed": 20,
+        "stamina": 0,
+        "power": 0,
+        "guts": 10,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "D",
+        "mile": "A",
+        "medium": "A",
+        "long": "E",
+        "front": "A",
+        "pace": "C",
+        "late": "E",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "The View from the Lead Is Mine!",
+        "description": "Silence Suzuka's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Concentration",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Unrestrained",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Silent Step",
+          "description": "Maintains speed while conserving stamina",
+          "type": "efficiency"
+        },
+        {
+          "name": "Escape Artist",
+          "description": "Increases speed when breaking away from the pack",
+          "type": "speed_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/silence_suzuka_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/silence_suzuka_original_thumb.jpg"
+    },
+    {
+      "id": "tokai_teio_original",
+      "name": "Tokai Teio",
+      "nameJp": "トウカイテイオー",
+      "version": "Original",
+      "rarity": 3,
+      "type": "speed",
+      "stats": {
+        "speed": 88,
+        "stamina": 72,
+        "power": 78,
+        "guts": 85,
+        "wisdom": 67
+      },
+      "bonuses": {
+        "speed": 20,
+        "stamina": 10,
+        "power": 0,
+        "guts": 0,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "F",
+        "mile": "E",
+        "medium": "A",
+        "long": "B",
+        "front": "D",
+        "pace": "A",
+        "late": "C",
+        "end": "E"
+      },
+      "uniqueSkill": {
+        "name": "Sky-High Teio Step",
+        "description": "Tokai Teio's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Technician",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Lightning Step",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Emperor's Pride",
+          "description": "Boosts all stats when in first place",
+          "type": "all_boost"
+        },
+        {
+          "name": "Comeback King",
+          "description": "Increases power when behind",
+          "type": "power_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/tokai_teio_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/tokai_teio_original_thumb.jpg"
+    },
+    {
+      "id": "mejiro_mcqueen_original",
+      "name": "Mejiro McQueen",
+      "nameJp": "メジロマックイーン",
+      "version": "Original",
+      "rarity": 3,
+      "type": "stamina",
+      "stats": {
+        "speed": 75,
+        "stamina": 90,
+        "power": 70,
+        "guts": 80,
+        "wisdom": 75
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 20,
+        "power": 0,
+        "guts": 0,
+        "wisdom": 10
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "E",
+        "short": "G",
+        "mile": "F",
+        "medium": "A",
+        "long": "A",
+        "front": "B",
+        "pace": "A",
+        "late": "D",
+        "end": "F"
+      },
+      "uniqueSkill": {
+        "name": "The Duty of Dignity Calls",
+        "description": "Mejiro McQueen's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Vanguard Spirit",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Calm and Collected",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Endurance Master",
+          "description": "Maintains high speed over long distances",
+          "type": "stamina_boost"
+        },
+        {
+          "name": "Steady Pace",
+          "description": "Reduces stamina consumption",
+          "type": "efficiency"
+        }
+      ],
+      "image": "assets/images/characters/portraits/mejiro_mcqueen_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/mejiro_mcqueen_original_thumb.jpg"
+    },
+    {
+      "id": "gold_ship_original",
+      "name": "Gold Ship",
+      "nameJp": "ゴールドシップ",
+      "version": "Original",
+      "rarity": 3,
+      "type": "power",
+      "stats": {
+        "speed": 78,
+        "stamina": 85,
+        "power": 88,
+        "guts": 90,
+        "wisdom": 60
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 20,
+        "power": 10,
+        "guts": 0,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "G",
+        "mile": "C",
+        "medium": "A",
+        "long": "A",
+        "front": "G",
+        "pace": "B",
+        "late": "B",
+        "end": "A"
+      },
+      "uniqueSkill": {
+        "name": "Anchors Aweigh!",
+        "description": "Gold Ship's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "The Coast Is Clear!",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Go-Home Specialist",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Wild Card",
+          "description": "Unpredictable performance boosts",
+          "type": "random_boost"
+        },
+        {
+          "name": "Power Surge",
+          "description": "Massive power increase in final stretch",
+          "type": "power_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/gold_ship_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/gold_ship_original_thumb.jpg"
+    },
+    {
+      "id": "vodka_original",
+      "name": "Vodka",
+      "nameJp": "ウォッカ",
+      "version": "Original",
+      "rarity": 3,
+      "type": "power",
+      "stats": {
+        "speed": 80,
+        "stamina": 75,
+        "power": 90,
+        "guts": 85,
+        "wisdom": 65
+      },
+      "bonuses": {
+        "speed": 10,
+        "stamina": 0,
+        "power": 20,
+        "guts": 0,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "F",
+        "mile": "A",
+        "medium": "A",
+        "long": "F",
+        "front": "C",
+        "pace": "B",
+        "late": "A",
+        "end": "F"
+      },
+      "uniqueSkill": {
+        "name": "Cut and Drive!",
+        "description": "Vodka's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Breath of Fresh Air",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Furious Feat",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Fierce Rivalry",
+          "description": "Boosts performance when competing with specific opponents",
+          "type": "situational"
+        },
+        {
+          "name": "Power Drive",
+          "description": "Increases acceleration and top speed",
+          "type": "speed_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/vodka_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/vodka_original_thumb.jpg"
+    },
+    {
+      "id": "air_groove_original",
+      "name": "Air Groove",
+      "nameJp": "エアグルーヴ",
+      "version": "Original",
+      "rarity": 3,
+      "type": "power",
+      "stats": {
+        "speed": 82,
+        "stamina": 88,
+        "power": 85,
+        "guts": 78,
+        "wisdom": 72
+      },
+      "bonuses": {
+        "speed": 10,
+        "stamina": 0,
+        "power": 20,
+        "guts": 0,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "C",
+        "mile": "B",
+        "medium": "A",
+        "long": "E",
+        "front": "D",
+        "pace": "A",
+        "late": "A",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "Blazing Pride",
+        "description": "Air Groove's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Dazzling Disorientation",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Lane Legerdemain",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Power Surge",
+          "description": "Increases power in final stretch",
+          "type": "power_boost"
+        },
+        {
+          "name": "Pace Control",
+          "description": "Maintains optimal racing pace",
+          "type": "efficiency"
+        }
+      ],
+      "image": "assets/images/characters/portraits/air_groove_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/air_groove_original_thumb.jpg"
+    },
+    {
+      "id": "agnes_tachyon_original",
+      "name": "Agnes Tachyon",
+      "nameJp": "アグネスタキオン",
+      "version": "Original",
+      "rarity": 3,
+      "type": "speed",
+      "stats": {
+        "speed": 92,
+        "stamina": 68,
+        "power": 75,
+        "guts": 80,
+        "wisdom": 85
+      },
+      "bonuses": {
+        "speed": 20,
+        "stamina": 0,
+        "power": 0,
+        "guts": 10,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "G",
+        "mile": "D",
+        "medium": "A",
+        "long": "B",
+        "front": "E",
+        "pace": "A",
+        "late": "B",
+        "end": "F"
+      },
+      "uniqueSkill": {
+        "name": "U=ma2",
+        "description": "Agnes Tachyon's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Dominator",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Race Planner",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Scientific Method",
+          "description": "Calculates optimal racing strategy",
+          "type": "wisdom_boost"
+        },
+        {
+          "name": "Speed Formula",
+          "description": "Increases speed through analysis",
+          "type": "speed_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/agnes_tachyon_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/agnes_tachyon_original_thumb.jpg"
+    },
+    {
+      "id": "biwa_hayahide_original",
+      "name": "Biwa Hayahide",
+      "nameJp": "ビワハヤヒデ",
+      "version": "Original",
+      "rarity": 3,
+      "type": "wisdom",
+      "stats": {
+        "speed": 78,
+        "stamina": 85,
+        "power": 72,
+        "guts": 88,
+        "wisdom": 90
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 0,
+        "power": 0,
+        "guts": 10,
+        "wisdom": 20
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "F",
+        "short": "F",
+        "mile": "C",
+        "medium": "A",
+        "long": "A",
+        "front": "E",
+        "pace": "A",
+        "late": "B",
+        "end": "E"
+      },
+      "uniqueSkill": {
+        "name": "∴win Q.E.D.",
+        "description": "Biwa Hayahide's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Calm and Collected",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Cooldown",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Strategic Mind",
+          "description": "Enhances racing strategy",
+          "type": "wisdom_boost"
+        },
+        {
+          "name": "Mental Fortitude",
+          "description": "Maintains composure under pressure",
+          "type": "guts_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/biwa_hayahide_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/biwa_hayahide_original_thumb.jpg"
+    },
+    {
+      "id": "curren_chan_original",
+      "name": "Curren Chan",
+      "nameJp": "カレンチャン",
+      "version": "Original",
+      "rarity": 3,
+      "type": "power",
+      "stats": {
+        "speed": 80,
+        "stamina": 70,
+        "power": 92,
+        "guts": 85,
+        "wisdom": 68
+      },
+      "bonuses": {
+        "speed": 10,
+        "stamina": 0,
+        "power": 20,
+        "guts": 0,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "F",
+        "short": "A",
+        "mile": "D",
+        "medium": "G",
+        "long": "G",
+        "front": "B",
+        "pace": "A",
+        "late": "E",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "#LookatCurren",
+        "description": "Curren Chan's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Dazzling Disorientation",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Adored by All",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Explosive Power",
+          "description": "Delivers powerful bursts of speed",
+          "type": "power_boost"
+        },
+        {
+          "name": "Sprint Specialist",
+          "description": "Excels in short distance races",
+          "type": "speed_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/curren_chan_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/curren_chan_original_thumb.jpg"
+    },
+    {
+      "id": "daiwa_scarlet_original",
+      "name": "Daiwa Scarlet",
+      "nameJp": "ダイワスカーレット",
+      "version": "Original",
+      "rarity": 3,
+      "type": "guts",
+      "stats": {
+        "speed": 85,
+        "stamina": 78,
+        "power": 80,
+        "guts": 92,
+        "wisdom": 70
+      },
+      "bonuses": {
+        "speed": 10,
+        "stamina": 0,
+        "power": 0,
+        "guts": 20,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "F",
+        "mile": "A",
+        "medium": "A",
+        "long": "B",
+        "front": "A",
+        "pace": "A",
+        "late": "E",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "Resplendent Red Ace",
+        "description": "Daiwa Scarlet's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Killer Tunes",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Race Planner",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Scarlet Determination",
+          "description": "Shows incredible fighting spirit",
+          "type": "guts_boost"
+        },
+        {
+          "name": "Front Runner",
+          "description": "Excels at leading from the front",
+          "type": "speed_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/daiwa_scarlet_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/daiwa_scarlet_original_thumb.jpg"
+    },
+    {
+      "id": "el_condor_pasa_original",
+      "name": "El Condor Pasa",
+      "nameJp": "エルコンドルパサー",
+      "version": "Original",
+      "rarity": 3,
+      "type": "speed",
+      "stats": {
+        "speed": 90,
+        "stamina": 75,
+        "power": 80,
+        "guts": 85,
+        "wisdom": 78
+      },
+      "bonuses": {
+        "speed": 20,
+        "stamina": 0,
+        "power": 0,
+        "guts": 0,
+        "wisdom": 10
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "B",
+        "short": "F",
+        "mile": "A",
+        "medium": "A",
+        "long": "B",
+        "front": "E",
+        "pace": "A",
+        "late": "A",
+        "end": "C"
+      },
+      "uniqueSkill": {
+        "name": "Victoria por plancha ☆",
+        "description": "El Condor Pasa's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Clairvoyance",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Calm and Collected",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Condor Flight",
+          "description": "Soars above the competition",
+          "type": "speed_boost"
+        },
+        {
+          "name": "South American Spirit",
+          "description": "Shows fierce determination",
+          "type": "guts_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/el_condor_pasa_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/el_condor_pasa_original_thumb.jpg"
+    },
+    {
+      "id": "maruzensky_original",
+      "name": "Maruzensky",
+      "nameJp": "マルゼンスキー",
+      "version": "Original",
+      "rarity": 3,
+      "type": "wisdom",
+      "stats": {
+        "speed": 88,
+        "stamina": 70,
+        "power": 75,
+        "guts": 80,
+        "wisdom": 92
+      },
+      "bonuses": {
+        "speed": 10,
+        "stamina": 0,
+        "power": 0,
+        "guts": 0,
+        "wisdom": 20
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "D",
+        "short": "B",
+        "mile": "A",
+        "medium": "B",
+        "long": "C",
+        "front": "A",
+        "pace": "E",
+        "late": "G",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "Red Shift/LP1211-M",
+        "description": "Maruzensky's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Changing Gears",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Step on the Gas!",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Sky High",
+          "description": "Reaches for the stars",
+          "type": "wisdom_boost"
+        },
+        {
+          "name": "Leading Edge",
+          "description": "Sets the pace from the front",
+          "type": "speed_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/maruzensky_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/maruzensky_original_thumb.jpg"
+    },
+    {
+      "id": "grass_wonder_original",
+      "name": "Grass Wonder",
+      "nameJp": "グラスワンダー",
+      "version": "Original",
+      "rarity": 3,
+      "type": "power",
+      "stats": {
+        "speed": 85,
+        "stamina": 88,
+        "power": 90,
+        "guts": 82,
+        "wisdom": 75
+      },
+      "bonuses": {
+        "speed": 20,
+        "stamina": 0,
+        "power": 10,
+        "guts": 0,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "G",
+        "mile": "A",
+        "medium": "B",
+        "long": "A",
+        "front": "F",
+        "pace": "A",
+        "late": "A",
+        "end": "F"
+      },
+      "uniqueSkill": {
+        "name": "Where There's a Will, There's a Way",
+        "description": "Grass Wonder's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Dominator",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "On Your Left!",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Wonder Power",
+          "description": "Unleashes incredible power",
+          "type": "power_boost"
+        },
+        {
+          "name": "Grass Track Master",
+          "description": "Excels on turf surfaces",
+          "type": "efficiency"
+        }
+      ],
+      "image": "assets/images/characters/portraits/grass_wonder_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/grass_wonder_original_thumb.jpg"
+    },
+    {
+      "id": "haru_urara_original",
+      "name": "Haru Urara",
+      "nameJp": "ハルウララ",
+      "version": "Original",
+      "rarity": 1,
+      "type": "guts",
+      "stats": {
+        "speed": 60,
+        "stamina": 65,
+        "power": 70,
+        "guts": 95,
+        "wisdom": 55
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 0,
+        "power": 10,
+        "guts": 20,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "G",
+        "dirt": "A",
+        "short": "A",
+        "mile": "B",
+        "medium": "G",
+        "long": "G",
+        "front": "G",
+        "pace": "G",
+        "late": "A",
+        "end": "B"
+      },
+      "uniqueSkill": {
+        "name": "Super-Duper Climax",
+        "description": "Haru Urara's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Iron Will",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Indomitable",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Never Give Up",
+          "description": "Shows incredible perseverance",
+          "type": "guts_boost"
+        },
+        {
+          "name": "Dirt Specialist",
+          "description": "Excels on dirt tracks",
+          "type": "efficiency"
+        }
+      ],
+      "image": "assets/images/characters/portraits/haru_urara_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/haru_urara_original_thumb.jpg"
+    },
+    {
+      "id": "king_halo_original",
+      "name": "King Halo",
+      "nameJp": "キングヘイロー",
+      "version": "Original",
+      "rarity": 3,
+      "type": "power",
+      "stats": {
+        "speed": 82,
+        "stamina": 75,
+        "power": 92,
+        "guts": 88,
+        "wisdom": 68
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 0,
+        "power": 20,
+        "guts": 10,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "A",
+        "mile": "B",
+        "medium": "B",
+        "long": "C",
+        "front": "G",
+        "pace": "B",
+        "late": "A",
+        "end": "D"
+      },
+      "uniqueSkill": {
+        "name": "Prideful King",
+        "description": "King Halo's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Blinding Flash",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "The Bigger Picture",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Royal Power",
+          "description": "Commands respect with overwhelming power",
+          "type": "power_boost"
+        },
+        {
+          "name": "King's Pride",
+          "description": "Never backs down from a challenge",
+          "type": "guts_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/king_halo_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/king_halo_original_thumb.jpg"
+    },
+    {
+      "id": "matikanefukukitaru_original",
+      "name": "Matikanefukukitaru",
+      "nameJp": "マチカネフクキタル",
+      "version": "Original",
+      "rarity": 3,
+      "type": "stamina",
+      "stats": {
+        "speed": 78,
+        "stamina": 92,
+        "power": 80,
+        "guts": 85,
+        "wisdom": 70
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 20,
+        "power": 10,
+        "guts": 0,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "F",
+        "short": "F",
+        "mile": "C",
+        "medium": "A",
+        "long": "A",
+        "front": "G",
+        "pace": "B",
+        "late": "A",
+        "end": "F"
+      },
+      "uniqueSkill": {
+        "name": "I See Victory in My Future!",
+        "description": "Matikanefukukitaru's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Illusionist",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Super Lucky Seven",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Fortune Teller",
+          "description": "Predicts the perfect racing strategy",
+          "type": "wisdom_boost"
+        },
+        {
+          "name": "Lucky Charm",
+          "description": "Brings good fortune in races",
+          "type": "stamina_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/matikanefukukitaru_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/matikanefukukitaru_original_thumb.jpg"
+    },
+    {
+      "id": "mayano_top_gun_original",
+      "name": "Mayano Top Gun",
+      "nameJp": "マヤノトップガン",
+      "version": "Original",
+      "rarity": 3,
+      "type": "stamina",
+      "stats": {
+        "speed": 80,
+        "stamina": 90,
+        "power": 75,
+        "guts": 88,
+        "wisdom": 72
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 20,
+        "power": 0,
+        "guts": 10,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "E",
+        "short": "D",
+        "mile": "D",
+        "medium": "A",
+        "long": "A",
+        "front": "A",
+        "pace": "A",
+        "late": "B",
+        "end": "B"
+      },
+      "uniqueSkill": {
+        "name": "Flashy☆Landing",
+        "description": "Mayano Top Gun's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Breath of Fresh Air",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "No Stopping Me!",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Top Gun Spirit",
+          "description": "Shows elite pilot determination",
+          "type": "guts_boost"
+        },
+        {
+          "name": "High Altitude",
+          "description": "Soars above the competition",
+          "type": "stamina_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/mayano_top_gun_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/mayano_top_gun_original_thumb.jpg"
+    },
+    {
+      "id": "mejiro_mcqueen_anime_collab",
+      "name": "Mejiro McQueen",
+      "nameJp": "メジロマックイーン",
+      "version": "Anime Collab",
+      "rarity": 3,
+      "type": "stamina",
+      "stats": {
+        "speed": 78,
+        "stamina": 88,
+        "power": 75,
+        "guts": 82,
+        "wisdom": 85
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 10,
+        "power": 10,
+        "guts": 0,
+        "wisdom": 10
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "E",
+        "short": "G",
+        "mile": "F",
+        "medium": "A",
+        "long": "A",
+        "front": "B",
+        "pace": "A",
+        "late": "D",
+        "end": "F"
+      },
+      "uniqueSkill": {
+        "name": "Legacy of the Strong",
+        "description": "Mejiro McQueen Anime Collab's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Cooldown",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Beeline Burst",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Anime Power",
+          "description": "Draws strength from anime spirit",
+          "type": "stamina_boost"
+        },
+        {
+          "name": "Collaborative Spirit",
+          "description": "Works well with others",
+          "type": "wisdom_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/mejiro_mcqueen_anime_collab_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/mejiro_mcqueen_anime_collab_thumb.jpg"
+    },
+    {
+      "id": "mejiro_ryan_original",
+      "name": "Mejiro Ryan",
+      "nameJp": "メジロライアン",
+      "version": "Original",
+      "rarity": 3,
+      "type": "power",
+      "stats": {
+        "speed": 85,
+        "stamina": 75,
+        "power": 90,
+        "guts": 80,
+        "wisdom": 78
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 0,
+        "power": 20,
+        "guts": 0,
+        "wisdom": 10
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "E",
+        "mile": "C",
+        "medium": "A",
+        "long": "B",
+        "front": "F",
+        "pace": "A",
+        "late": "A",
+        "end": "F"
+      },
+      "uniqueSkill": {
+        "name": "Let's Pump Some Iron!",
+        "description": "Mejiro Ryan's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Killer Tunes",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Rising Dragon",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Iron Pumping",
+          "description": "Builds incredible muscle power",
+          "type": "power_boost"
+        },
+        {
+          "name": "Mejiro Pride",
+          "description": "Shows family determination",
+          "type": "guts_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/mejiro_ryan_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/mejiro_ryan_original_thumb.jpg"
+    },
+    {
+      "id": "mihono_bourbon_original",
+      "name": "Mihono Bourbon",
+      "nameJp": "ミホノブルボン",
+      "version": "Original",
+      "rarity": 3,
+      "type": "stamina",
+      "stats": {
+        "speed": 82,
+        "stamina": 90,
+        "power": 78,
+        "guts": 85,
+        "wisdom": 70
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 20,
+        "power": 10,
+        "guts": 0,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "C",
+        "mile": "B",
+        "medium": "A",
+        "long": "B",
+        "front": "A",
+        "pace": "E",
+        "late": "G",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "G00 1st. F∞;",
+        "description": "Mihono Bourbon's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Taking the Lead",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Trackblazer",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Bourbon Power",
+          "description": "Unleashes smooth, refined power",
+          "type": "stamina_boost"
+        },
+        {
+          "name": "Front Runner",
+          "description": "Excels at leading from the start",
+          "type": "speed_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/mihono_bourbon_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/mihono_bourbon_original_thumb.jpg"
+    },
+    {
+      "id": "nice_nature_original",
+      "name": "Nice Nature",
+      "nameJp": "ナイスネイチャ",
+      "version": "Original",
+      "rarity": 2,
+      "type": "power",
+      "stats": {
+        "speed": 75,
+        "stamina": 80,
+        "power": 88,
+        "guts": 82,
+        "wisdom": 78
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 0,
+        "power": 20,
+        "guts": 0,
+        "wisdom": 10
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "G",
+        "mile": "C",
+        "medium": "A",
+        "long": "A",
+        "front": "F",
+        "pace": "B",
+        "late": "A",
+        "end": "D"
+      },
+      "uniqueSkill": {
+        "name": "Just a Little Farther!",
+        "description": "Nice Nature's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Mystifying Murmur",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "All-Seeing Eyes",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Nature's Power",
+          "description": "Draws strength from natural surroundings",
+          "type": "power_boost"
+        },
+        {
+          "name": "Gentle Spirit",
+          "description": "Maintains calm composure",
+          "type": "wisdom_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/nice_nature_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/nice_nature_original_thumb.jpg"
+    },
+    {
+      "id": "oguri_cap_original",
+      "name": "Oguri Cap",
+      "nameJp": "オグリキャップ",
+      "version": "Original",
+      "rarity": 3,
+      "type": "speed",
+      "stats": {
+        "speed": 92,
+        "stamina": 78,
+        "power": 85,
+        "guts": 88,
+        "wisdom": 75
+      },
+      "bonuses": {
+        "speed": 20,
+        "stamina": 0,
+        "power": 10,
+        "guts": 0,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "B",
+        "short": "E",
+        "mile": "A",
+        "medium": "A",
+        "long": "B",
+        "front": "F",
+        "pace": "A",
+        "late": "A",
+        "end": "D"
+      },
+      "uniqueSkill": {
+        "name": "Triumphant Pulse",
+        "description": "Oguri Cap's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Gourmand",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Corner Connoisseur",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Cap Power",
+          "description": "Shows incredible determination",
+          "type": "speed_boost"
+        },
+        {
+          "name": "Crowd Favorite",
+          "description": "Gains energy from audience support",
+          "type": "guts_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/oguri_cap_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/oguri_cap_original_thumb.jpg"
+    },
+    {
+      "id": "rice_shower_original",
+      "name": "Rice Shower",
+      "nameJp": "ライスシャワー",
+      "version": "Original",
+      "rarity": 3,
+      "type": "guts",
+      "stats": {
+        "speed": 78,
+        "stamina": 85,
+        "power": 75,
+        "guts": 92,
+        "wisdom": 80
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 10,
+        "power": 0,
+        "guts": 20,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "E",
+        "mile": "C",
+        "medium": "A",
+        "long": "A",
+        "front": "B",
+        "pace": "A",
+        "late": "C",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "Blue Rose Closer",
+        "description": "Rice Shower's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Determined Descent",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Cooldown",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Rice Power",
+          "description": "Shows incredible perseverance",
+          "type": "guts_boost"
+        },
+        {
+          "name": "Blue Rose Spirit",
+          "description": "Maintains elegant composure",
+          "type": "stamina_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/rice_shower_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/rice_shower_original_thumb.jpg"
+    },
+    {
+      "id": "sakura_bakushin_o_original",
+      "name": "Sakura Bakushin O",
+      "nameJp": "サクラバクシンオー",
+      "version": "Original",
+      "rarity": 3,
+      "type": "speed",
+      "stats": {
+        "speed": 95,
+        "stamina": 65,
+        "power": 80,
+        "guts": 85,
+        "wisdom": 88
+      },
+      "bonuses": {
+        "speed": 20,
+        "stamina": 0,
+        "power": 0,
+        "guts": 0,
+        "wisdom": 10
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "A",
+        "mile": "B",
+        "medium": "G",
+        "long": "G",
+        "front": "A",
+        "pace": "A",
+        "late": "F",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "Genius x Bakushin = Victory",
+        "description": "Sakura Bakushin O's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Turbo Sprint",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Staggering Lead",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Bakushin Speed",
+          "description": "Explosive acceleration from the start",
+          "type": "speed_boost"
+        },
+        {
+          "name": "Sprint Genius",
+          "description": "Masters short distance racing",
+          "type": "wisdom_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/sakura_bakushin_o_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/sakura_bakushin_o_original_thumb.jpg"
+    },
+    {
+      "id": "super_creek_original",
+      "name": "Super Creek",
+      "nameJp": "スーパークリーク",
+      "version": "Original",
+      "rarity": 3,
+      "type": "wisdom",
+      "stats": {
+        "speed": 80,
+        "stamina": 88,
+        "power": 75,
+        "guts": 82,
+        "wisdom": 92
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 10,
+        "power": 0,
+        "guts": 0,
+        "wisdom": 20
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "G",
+        "mile": "G",
+        "medium": "A",
+        "long": "A",
+        "front": "D",
+        "pace": "A",
+        "late": "B",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "Pure Heart",
+        "description": "Super Creek's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Dazzling Disorientation",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Swinging Maestro",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Creek Wisdom",
+          "description": "Shows incredible strategic thinking",
+          "type": "wisdom_boost"
+        },
+        {
+          "name": "Pure Spirit",
+          "description": "Maintains innocent determination",
+          "type": "stamina_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/super_creek_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/super_creek_original_thumb.jpg"
+    },
+    {
+      "id": "symboli_rudolf_original",
+      "name": "Symboli Rudolf",
+      "nameJp": "シンボリルドルフ",
+      "version": "Original",
+      "rarity": 3,
+      "type": "stamina",
+      "stats": {
+        "speed": 85,
+        "stamina": 92,
+        "power": 80,
+        "guts": 88,
+        "wisdom": 75
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 20,
+        "power": 0,
+        "guts": 10,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "E",
+        "mile": "C",
+        "medium": "A",
+        "long": "A",
+        "front": "B",
+        "pace": "A",
+        "late": "A",
+        "end": "C"
+      },
+      "uniqueSkill": {
+        "name": "Behold Thine Emperor's Divine Might",
+        "description": "Symboli Rudolf's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Dominator",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Professor of Curvature",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Emperor's Authority",
+          "description": "Commands respect and dominance",
+          "type": "stamina_boost"
+        },
+        {
+          "name": "Royal Presence",
+          "description": "Intimidates opponents with imperial aura",
+          "type": "guts_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/symboli_rudolf_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/symboli_rudolf_original_thumb.jpg"
+    },
+    {
+      "id": "taiki_shuttle_original",
+      "name": "Taiki Shuttle",
+      "nameJp": "タイキシャトル",
+      "version": "Original",
+      "rarity": 3,
+      "type": "speed",
+      "stats": {
+        "speed": 95,
+        "stamina": 70,
+        "power": 82,
+        "guts": 80,
+        "wisdom": 85
+      },
+      "bonuses": {
+        "speed": 20,
+        "stamina": 0,
+        "power": 0,
+        "guts": 0,
+        "wisdom": 10
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "B",
+        "short": "A",
+        "mile": "A",
+        "medium": "E",
+        "long": "G",
+        "front": "C",
+        "pace": "A",
+        "late": "E",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "Shooting for Victory!",
+        "description": "Taiki Shuttle's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Changing Gears",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Mile Maven",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Shuttle Speed",
+          "description": "Incredible acceleration and top speed",
+          "type": "speed_boost"
+        },
+        {
+          "name": "International Spirit",
+          "description": "Excels in overseas competitions",
+          "type": "wisdom_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/taiki_shuttle_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/taiki_shuttle_original_thumb.jpg"
+    },
+    {
+      "id": "tm_opera_o_original",
+      "name": "TM Opera O",
+      "nameJp": "ティーエムオペラオー",
+      "version": "Original",
+      "rarity": 3,
+      "type": "stamina",
+      "stats": {
+        "speed": 82,
+        "stamina": 90,
+        "power": 78,
+        "guts": 85,
+        "wisdom": 88
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 20,
+        "power": 0,
+        "guts": 0,
+        "wisdom": 10
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "E",
+        "short": "G",
+        "mile": "E",
+        "medium": "A",
+        "long": "A",
+        "front": "C",
+        "pace": "A",
+        "late": "A",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "This Dance Is for Vittoria!",
+        "description": "TM Opera O's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Speed Star",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Killer Tunes",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Opera Performance",
+          "description": "Delivers dramatic racing performances",
+          "type": "stamina_boost"
+        },
+        {
+          "name": "Artistic Flair",
+          "description": "Shows creative racing style",
+          "type": "wisdom_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/tm_opera_o_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/tm_opera_o_original_thumb.jpg"
+    },
+    {
+      "id": "tokai_teio_anime_collab",
+      "name": "Tokai Teio",
+      "nameJp": "トウカイテイオー",
+      "version": "Anime Collab",
+      "rarity": 3,
+      "type": "speed",
+      "stats": {
+        "speed": 90,
+        "stamina": 78,
+        "power": 82,
+        "guts": 88,
+        "wisdom": 72
+      },
+      "bonuses": {
+        "speed": 10,
+        "stamina": 10,
+        "power": 0,
+        "guts": 10,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "F",
+        "mile": "E",
+        "medium": "A",
+        "long": "B",
+        "front": "D",
+        "pace": "A",
+        "late": "C",
+        "end": "E"
+      },
+      "uniqueSkill": {
+        "name": "Certain Victory",
+        "description": "Tokai Teio Anime Collab's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Race Planner",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Miraculous Step",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Anime Emperor",
+          "description": "Shows imperial power in anime style",
+          "type": "speed_boost"
+        },
+        {
+          "name": "Collaborative Victory",
+          "description": "Draws strength from teamwork",
+          "type": "guts_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/tokai_teio_anime_collab_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/tokai_teio_anime_collab_thumb.jpg"
+    },
+    {
+      "id": "winning_ticket_original",
+      "name": "Winning Ticket",
+      "nameJp": "ウイニングチケット",
+      "version": "Original",
+      "rarity": 3,
+      "type": "power",
+      "stats": {
+        "speed": 85,
+        "stamina": 82,
+        "power": 90,
+        "guts": 78,
+        "wisdom": 75
+      },
+      "bonuses": {
+        "speed": 0,
+        "stamina": 10,
+        "power": 20,
+        "guts": 0,
+        "wisdom": 0
+      },
+      "aptitudes": {
+        "turf": "A",
+        "dirt": "G",
+        "short": "G",
+        "mile": "F",
+        "medium": "A",
+        "long": "B",
+        "front": "G",
+        "pace": "B",
+        "late": "A",
+        "end": "G"
+      },
+      "uniqueSkill": {
+        "name": "Our Ticket to Win!",
+        "description": "Winning Ticket's unique skill"
+      },
+      "awakeningSkills": {
+        "rare1": {
+          "name": "Hard Worker",
+          "description": "Awakening rare skill 1"
+        },
+        "rare2": {
+          "name": "Fast & Furious",
+          "description": "Awakening rare skill 2"
+        }
+      },
+      "skills": [
+        {
+          "name": "Winning Power",
+          "description": "Delivers powerful finishing kicks",
+          "type": "power_boost"
+        },
+        {
+          "name": "Lucky Ticket",
+          "description": "Brings fortune in crucial moments",
+          "type": "stamina_boost"
+        }
+      ],
+      "image": "assets/images/characters/portraits/winning_ticket_original_portraits.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/winning_ticket_original_thumb.jpg"
+    }
+  ],
+  "metadata": {
+    "version": "1.6.0",
+    "lastUpdated": "2025-07-30",
+    "totalCharacters": 31,
+    "source": "Screenshot Data Extraction - Final Collection",
+    "features": {
+      "comparison": true,
+      "bonuses": true,
+      "aptitudes": true,
+      "awakeningSkills": true,
+      "animeCollab": true,
+      "multipleRarities": true,
+      "completeRoster": true
+    }
+  }
+}
