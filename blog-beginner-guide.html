@@ -11,7 +11,7 @@
         content="uma musume, beginner guide, pretty derby, training, characters, team building, URA finals">
     <meta name="author" content="Uma Musume Guide">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://umamusumeguide.co/">
+    <link rel="canonical" href="https://umamusumeguide.co/beginner-guide.html">
 
     <!-- Open Graph tags -->
     <meta property="og:title" content="Uma Musume Beginner Guide: How to Dominate Early Game Like a Pro">
@@ -40,6 +40,25 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHEDJT4C1T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZHEDJT4C1T');
+    </script>
+    
+    <!-- Prevent theme flash -->
+    <script>
+        (function() {
+            const theme = localStorage.getItem('uma-musume-theme') || 
+                         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 
     <!-- Structured data for blog post -->
     <script type="application/ld+json">
@@ -365,9 +384,15 @@
             <p class="site-description">Your ultimate resource for Uma Musume Pretty Derby character comparison and
                 guides</p>
             <nav aria-label="Main navigation" class="main-nav">
-                <a href="index.html" class="nav-link">Character Comparison</a>
-                <a href="beginner-guide.html" class="nav-link">Beginner Guide</a>
-                <a href="#" class="nav-link">Blog</a>
+                <div class="nav-controls">
+                    <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                        ☰ Menu
+                    </button>
+                </div>
+                <div class="mobile-nav-links" id="mobile-nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="beginner-guide.html" class="nav-link">Beginner Guide</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -377,7 +402,7 @@
             <nav class="breadcrumb" style="margin-bottom: var(--spacing-lg); text-align: center;">
                 <a href="index.html" style="color: var(--primary-pink); text-decoration: none;">Home</a>
                 <span style="margin: 0 var(--spacing-sm); color: var(--text-gray);">→</span>
-                <a href="index.html" style="color: var(--primary-pink); text-decoration: none; font-weight: 600;">Home</a>
+                <a href="beginner-guide.html" style="color: var(--primary-pink); text-decoration: none;">Beginner Guide</a>
                 <span style="margin: 0 var(--spacing-sm); color: var(--text-gray);">→</span>
                 <span style="color: var(--text-gray);">Early Game Domination Guide</span>
             </nav>
@@ -666,7 +691,7 @@
                     <section class="blog-section">
                         <div style="background: var(--gradient-primary); color: var(--white); padding: var(--spacing-lg); border-radius: var(--radius-md); text-align: center; margin-bottom: var(--spacing-lg);">
                             <p style="margin-bottom: var(--spacing-sm); font-weight: 600;">📚 Want More Beginner Guides?</p>
-                            <a href="index.html" style="color: var(--white); text-decoration: underline; font-weight: 500;">← Back to Home</a>
+                            <a href="beginner-guide.html" style="color: var(--white); text-decoration: underline; font-weight: 500;">← Back to Beginner Guide</a>
                         </div>
                         <div class="source-attribution">
                             <p><strong>Source:</strong> <a href="https://game8.jp/umamusume/372912" target="_blank"
@@ -724,6 +749,9 @@
             });
         });
     </script>
+    <script src="assets/js/back-to-top.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/mobile-nav.js"></script>
 </body>
 
 </html>

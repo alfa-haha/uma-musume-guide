@@ -690,6 +690,7 @@ class CharacterSelector {
         this.searchClear = this.container.querySelector('#search-clear');
         this.typeFilter = this.container.querySelector('#type-filter');
         this.rarityFilter = this.container.querySelector('#rarity-filter');
+        this.resetButton = this.container.querySelector('#reset-selection');
         this.characterList = this.container.querySelector('#character-list');
         
         // Set up event listeners
@@ -730,7 +731,12 @@ class CharacterSelector {
             });
         }
         
-        // Removed clear all selected functionality
+        // Reset button functionality
+        if (this.resetButton) {
+            this.resetButton.addEventListener('click', () => {
+                this.handleReset();
+            });
+        }
     }
     
     handleSearch(query) {
@@ -954,6 +960,30 @@ class CharacterSelector {
     
     getFilteredCharacters() {
         return [...this.filteredCharacters];
+    }
+    
+    handleReset() {
+        // Clear all selections and reset filters
+        this.reset();
+        
+        // Provide user feedback
+        console.log('Character selection reset');
+        
+        // Optional: Show a brief feedback message
+        if (this.resetButton) {
+            const originalText = this.resetButton.textContent;
+            this.resetButton.textContent = 'Reset ✓';
+            this.resetButton.style.background = 'var(--grass-green)';
+            this.resetButton.style.color = 'var(--white)';
+            this.resetButton.style.borderColor = 'var(--grass-green)';
+            
+            setTimeout(() => {
+                this.resetButton.textContent = originalText;
+                this.resetButton.style.background = '';
+                this.resetButton.style.color = '';
+                this.resetButton.style.borderColor = '';
+            }, 1000);
+        }
     }
     
     reset() {

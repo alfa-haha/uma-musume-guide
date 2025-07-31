@@ -36,6 +36,25 @@
     
     <link rel="stylesheet" href="assets/css/style.css">
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHEDJT4C1T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZHEDJT4C1T');
+    </script>
+    
+    <!-- Prevent theme flash -->
+    <script>
+        (function() {
+            const theme = localStorage.getItem('uma-musume-theme') || 
+                         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    
     <!-- Structured data for guide collection -->
     <script type="application/ld+json">
     {
@@ -462,9 +481,15 @@
             <h1>Uma Musume Guide</h1>
             <p class="site-description">Your ultimate resource for Uma Musume Pretty Derby character comparison and guides</p>
             <nav aria-label="Main navigation" class="main-nav">
-                <a href="index.html" class="nav-link">Character Comparison</a>
-                <a href="beginner-guide.html" class="nav-link">Beginner Guide</a>
-                <a href="#" class="nav-link">Blog</a>
+                <div class="nav-controls">
+                    <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                        ☰ Menu
+                    </button>
+                </div>
+                <div class="mobile-nav-links" id="mobile-nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="beginner-guide.html" class="nav-link">Beginner Guide</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -632,5 +657,9 @@
             <p class="disclaimer">This site is not affiliated with Cygames or Uma Musume Pretty Derby.</p>
         </div>
     </footer>
+    
+    <script src="assets/js/back-to-top.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/mobile-nav.js"></script>
 </body>
 </html>

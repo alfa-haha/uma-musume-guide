@@ -8,7 +8,7 @@
     <meta name="keywords" content="uma musume, daily guide, trainers, friends, circles, support cards, daily races, beginner tips">
     <meta name="author" content="Uma Musume Guide">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://umamusumeguide.co/">
+    <link rel="canonical" href="https://umamusumeguide.co/beginner-guide.html">
     
     <!-- Open Graph tags -->
     <meta property="og:title" content="Daily Must-Do Guide for New Uma Musume Trainers">
@@ -35,6 +35,25 @@
     <link rel="manifest" href="/site.webmanifest">
     
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHEDJT4C1T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZHEDJT4C1T');
+    </script>
+    
+    <!-- Prevent theme flash -->
+    <script>
+        (function() {
+            const theme = localStorage.getItem('uma-musume-theme') || 
+                         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
     
     <!-- Structured data for blog post -->
     <script type="application/ld+json">
@@ -406,9 +425,15 @@
             <h1>Uma Musume Guide</h1>
             <p class="site-description">Your ultimate resource for Uma Musume Pretty Derby character comparison and guides</p>
             <nav aria-label="Main navigation" class="main-nav">
-                <a href="index.html" class="nav-link">Character Comparison</a>
-                <a href="beginner-guide.html" class="nav-link">Beginner Guide</a>
-                <a href="#" class="nav-link">Blog</a>
+                <div class="nav-controls">
+                    <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                        ☰ Menu
+                    </button>
+                </div>
+                <div class="mobile-nav-links" id="mobile-nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="beginner-guide.html" class="nav-link">Beginner Guide</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -418,7 +443,7 @@
             <nav class="breadcrumb" style="margin-bottom: var(--spacing-lg); text-align: center;">
                 <a href="index.html" style="color: var(--primary-pink); text-decoration: none;">Home</a>
                 <span style="margin: 0 var(--spacing-sm); color: var(--text-gray);">→</span>
-                <a href="index.html" style="color: var(--primary-pink); text-decoration: none; font-weight: 600;">Home</a>
+                <a href="beginner-guide.html" style="color: var(--primary-pink); text-decoration: none;">Beginner Guide</a>
                 <span style="margin: 0 var(--spacing-sm); color: var(--text-gray);">→</span>
                 <span style="color: var(--text-gray);">Daily Must-Do Guide</span>
             </nav>
@@ -704,7 +729,7 @@
                     <section class="blog-section">
                         <div style="background: var(--gradient-primary); color: var(--white); padding: var(--spacing-lg); border-radius: var(--radius-md); text-align: center; margin-bottom: var(--spacing-lg);">
                             <p style="margin-bottom: var(--spacing-sm); font-weight: 600;">📚 Want More Beginner Guides?</p>
-                            <a href="index.html" style="color: var(--white); text-decoration: underline; font-weight: 500;">← Back to Home</a>
+                            <a href="beginner-guide.html" style="color: var(--white); text-decoration: underline; font-weight: 500;">← Back to Beginner Guide</a>
                         </div>
                         <div class="source-attribution">
                             <p><strong>Source:</strong> <a href="https://umamusumelabo.com/beginner/kihonmatome" target="_blank"
@@ -719,8 +744,67 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2024 Uma Musume Guide. All rights reserved.</p>
-            <p class="disclaimer">This site is not affiliated with Cygames or Uma Musume Pretty Derby.</p>
+            <div class="footer-content">
+                <div class="footer-main">
+                    <!-- Column 1: Brand + Social -->
+                    <div class="footer-brand-social">
+                        <h3>Uma Musume Guide</h3>
+                        <div class="footer-social">
+                            <h4>Share with Friends</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://umamusumeguide.co/" target="_blank" rel="noopener nofollow" class="social-link facebook" title="Share on Facebook">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com/intent/tweet?url=https://umamusumeguide.co/&text=Check%20out%20this%20awesome%20Uma%20Musume%20guide!" target="_blank" rel="noopener nofollow" class="social-link twitter" title="Share on X">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.reddit.com/submit?url=https://umamusumeguide.co/&title=Uma%20Musume%20Guide%20-%20Ultimate%20Pretty%20Derby%20Resource" target="_blank" rel="noopener nofollow" class="social-link reddit" title="Share on Reddit">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 1 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://discord.gg/umamusume" target="_blank" rel="noopener nofollow" class="social-link discord" title="Join Discord">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0002 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1568 2.4189Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Column 2: Guide Links -->
+                    <div class="footer-links">
+                        <h4>Guide Links</h4>
+                        <ul class="guide-links-list">
+                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Character Guide</a></li>
+                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Career Guide</a></li>
+                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Training Guide</a></li>
+                            <li><a href="beginner-guide.html" rel="nofollow">Umamusume Stats Guide</a></li>
+                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Event Guide</a></li>
+                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Skill Guide</a></li>
+                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Tier List</a></li>
+                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Wiki</a></li>
+                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Anime</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 3: Contact -->
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p>Found a mistake or got a better idea? Hit me up!</p>
+                        <a href="mailto:hello@umamusumeguide.co" class="contact-email">hello@umamusumeguide.co</a>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Uma Musume Guide. All rights reserved.</p>
+                    <p class="disclaimer">This site is not affiliated with Cygames or Uma Musume Pretty Derby.</p>
+                </div>
+            </div>
         </div>
     </footer>
     
@@ -761,5 +845,8 @@
             });
         });
     </script>
+    <script src="assets/js/back-to-top.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/mobile-nav.js"></script>
 </body>
 </html>
