@@ -8,13 +8,13 @@
     <meta name="keywords" content="uma musume, daily guide, trainers, friends, circles, support cards, daily races, beginner tips">
     <meta name="author" content="Uma Musume Guide">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://umamusumeguide.co/beginner-guide.html">
+    <link rel="canonical" href="https://umamusumeguide.co/guides/daily-tasks-new-trainers">
     
     <!-- Open Graph tags -->
     <meta property="og:title" content="Daily Must-Do Guide for New Uma Musume Trainers">
     <meta property="og:description" content="Essential daily tasks and strategies for new Uma Musume trainers to maximize progress">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://umamusumeguide.co/blog-daily-guide.html">
+    <meta property="og:url" content="https://umamusumeguide.co/guides/daily-tasks-new-trainers">
     <meta property="og:image" content="https://umamusumeguide.co/assets/images/blog/covers/daily-guide-cover.jpg">
     <meta property="og:site_name" content="Uma Musume Guide">
     <meta property="og:locale" content="en_US">
@@ -35,16 +35,6 @@
     <link rel="manifest" href="/site.webmanifest">
     
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHEDJT4C1T"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-ZHEDJT4C1T');
-    </script>
     
     <!-- Prevent theme flash -->
     <script>
@@ -404,8 +394,13 @@
             }
             
             .blog-meta {
-                flex-direction: column;
-                align-items: center;
+                gap: var(--spacing-sm);
+                justify-content: center;
+            }
+            
+            .blog-tag {
+                font-size: 0.8rem;
+                padding: var(--spacing-xs) var(--spacing-sm);
             }
             
             .comparison-table {
@@ -431,8 +426,8 @@
                     </button>
                 </div>
                 <div class="mobile-nav-links" id="mobile-nav-links">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="beginner-guide.html" class="nav-link">Beginner Guide</a>
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/beginner-guide" class="nav-link">Beginner Guide</a>
                 </div>
             </nav>
         </div>
@@ -441,9 +436,9 @@
     <main role="main" class="main-content">
         <div class="blog-container">
             <nav class="breadcrumb" style="margin-bottom: var(--spacing-lg); text-align: center;">
-                <a href="index.html" style="color: var(--primary-pink); text-decoration: none;">Home</a>
+                <a href="/" style="color: var(--primary-pink); text-decoration: none;">Home</a>
                 <span style="margin: 0 var(--spacing-sm); color: var(--text-gray);">→</span>
-                <a href="beginner-guide.html" style="color: var(--primary-pink); text-decoration: none;">Beginner Guide</a>
+                <a href="/beginner-guide" style="color: var(--primary-pink); text-decoration: none;">Beginner Guide</a>
                 <span style="margin: 0 var(--spacing-sm); color: var(--text-gray);">→</span>
                 <span style="color: var(--text-gray);">Daily Must-Do Guide</span>
             </nav>
@@ -729,7 +724,7 @@
                     <section class="blog-section">
                         <div style="background: var(--gradient-primary); color: var(--white); padding: var(--spacing-lg); border-radius: var(--radius-md); text-align: center; margin-bottom: var(--spacing-lg);">
                             <p style="margin-bottom: var(--spacing-sm); font-weight: 600;">📚 Want More Beginner Guides?</p>
-                            <a href="beginner-guide.html" style="color: var(--white); text-decoration: underline; font-weight: 500;">← Back to Beginner Guide</a>
+                            <a href="/beginner-guide" style="color: var(--white); text-decoration: underline; font-weight: 500;">← Back to Beginner Guide</a>
                         </div>
                         <div class="source-attribution">
                             <p><strong>Source:</strong> <a href="https://umamusumelabo.com/beginner/kihonmatome" target="_blank"
@@ -764,7 +759,7 @@
                                 </a>
                                 <a href="https://www.reddit.com/submit?url=https://umamusumeguide.co/&title=Uma%20Musume%20Guide%20-%20Ultimate%20Pretty%20Derby%20Resource" target="_blank" rel="noopener nofollow" class="social-link reddit" title="Share on Reddit">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 1 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+                                        <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
                                     </svg>
                                 </a>
                                 <a href="https://discord.gg/umamusume" target="_blank" rel="noopener nofollow" class="social-link discord" title="Join Discord">
@@ -780,15 +775,15 @@
                     <div class="footer-links">
                         <h4>Guide Links</h4>
                         <ul class="guide-links-list">
-                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Character Guide</a></li>
-                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Career Guide</a></li>
-                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Training Guide</a></li>
-                            <li><a href="beginner-guide.html" rel="nofollow">Umamusume Stats Guide</a></li>
-                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Event Guide</a></li>
-                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Skill Guide</a></li>
-                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Tier List</a></li>
-                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Wiki</a></li>
-                            <li><a href="beginner-guide.html" rel="nofollow">Uma Musume Anime</a></li>
+                            <li><a href="/beginner-guide" rel="nofollow">Uma Musume Character Guide</a></li>
+                            <li><a href="/beginner-guide" rel="nofollow">Uma Musume Career Guide</a></li>
+                            <li><a href="/beginner-guide" rel="nofollow">Uma Musume Training Guide</a></li>
+                            <li><a href="/beginner-guide" rel="nofollow">Umamusume Stats Guide</a></li>
+                            <li><a href="/beginner-guide" rel="nofollow">Uma Musume Event Guide</a></li>
+                            <li><a href="/beginner-guide" rel="nofollow">Uma Musume Skill Guide</a></li>
+                            <li><a href="/beginner-guide" rel="nofollow">Uma Musume Tier List</a></li>
+                            <li><a href="/beginner-guide" rel="nofollow">Uma Musume Wiki</a></li>
+                            <li><a href="/beginner-guide" rel="nofollow">Uma Musume Anime</a></li>
                         </ul>
                     </div>
                     

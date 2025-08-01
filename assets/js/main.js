@@ -1045,8 +1045,15 @@ class ComparisonTable {
         // Setup remove button handlers
         this.setupRemoveButtons();
         
-        // Apply intelligent column width
-        this.adjustColumnWidths();
+        // Apply intelligent column width (only for tablet and desktop)
+        if (window.innerWidth >= 768) {
+            this.adjustColumnWidths();
+        } else {
+            // On mobile, show scroll indicator if needed
+            if (this.characters.length > 1) {
+                this.showScrollIndicator();
+            }
+        }
         
         // Setup window resize handler
         this.setupResizeHandler();
@@ -1170,12 +1177,39 @@ class ComparisonTable {
             attributeColWidth = 180; // desktop
         }
         
-        // Calculate available width for character columns
+        // For mobile, use CSS-based layout instead of JavaScript width setting
+        if (window.innerWidth < 768) {
+            // Remove any inline styles to let CSS handle the layout completely
+            const allCells = this.table.querySelectorAll('th, td');
+            allCells.forEach(cell => {
+                cell.style.width = '';
+                cell.style.minWidth = '';
+                cell.style.maxWidth = '';
+            });
+            
+            // Remove any table-level width constraints
+            this.table.style.width = '';
+            this.table.style.minWidth = '';
+            
+            // Let CSS variables handle the layout
+            // The CSS already defines proper mobile layout with:
+            // --attr-col-mobile: 120px and --char-col-min: 140px
+            
+            // Always show scroll indicator on mobile when there are multiple characters
+            if (characterCount > 1) {
+                this.showScrollIndicator();
+            } else {
+                this.hideScrollIndicator();
+            }
+            return;
+        }
+        
+        // Calculate available width for character columns (tablet and desktop)
         const availableWidth = containerWidth - attributeColWidth - 40; // 40px for padding/borders
         const minCharacterColWidth = 140;
         const idealCharacterColWidth = Math.max(minCharacterColWidth, availableWidth / characterCount);
         
-        // Apply calculated widths
+        // Apply calculated widths for tablet and desktop
         const firstCells = this.table.querySelectorAll('th:first-child, td:first-child');
         firstCells.forEach(cell => {
             cell.style.width = `${attributeColWidth}px`;
@@ -1261,7 +1295,18 @@ class ComparisonTable {
         // Create debounced resize handler
         this.resizeHandler = this.debounce(() => {
             if (this.characters.length > 0) {
-                this.adjustColumnWidths();
+                // Only adjust column widths on tablet and desktop
+                // Let CSS handle mobile layout completely
+                if (window.innerWidth >= 768) {
+                    this.adjustColumnWidths();
+                } else {
+                    // On mobile, just ensure scroll indicator is shown if needed
+                    if (this.characters.length > 1) {
+                        this.showScrollIndicator();
+                    } else {
+                        this.hideScrollIndicator();
+                    }
+                }
             }
         }, 250);
         

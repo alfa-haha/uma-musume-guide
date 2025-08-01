@@ -870,7 +870,7 @@ section::before {
 
 /* Responsive table layout */
 :root {
-  --attr-col-mobile: 120px;
+  --attr-col-mobile: 130px;
   --attr-col-tablet: 150px;
   --attr-col-desktop: 180px;
   --char-col-min: 140px;
@@ -883,18 +883,24 @@ section::before {
   .comparison-table td:first-child {
     width: var(--attr-col-mobile);
     min-width: var(--attr-col-mobile);
+    max-width: var(--attr-col-mobile);
   }
 
-  /* Remove display: none to allow all columns to show */
-  .comparison-table th:nth-child(n+4),
-  .comparison-table td:nth-child(n+4) {
+  /* Ensure all character columns are visible */
+  .comparison-table th:nth-child(n+2),
+  .comparison-table td:nth-child(n+2) {
     display: table-cell;
+    min-width: var(--char-col-min);
+    width: var(--char-col-min);
   }
 
   .comparison-table-wrapper {
-    margin: 0 calc(-1 * var(--spacing-md));
+    margin: 0;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    padding: 0 var(--spacing-xs);
+    /* Prevent content clipping */
+    overflow-y: visible;
   }
 
   .comparison-table th,
@@ -906,19 +912,41 @@ section::before {
     text-overflow: ellipsis;
   }
 
-  /* Allow first column (attribute names) to wrap */
+  /* Allow first column (attribute names) to wrap and ensure full visibility */
   .comparison-table th:first-child,
   .comparison-table td:first-child {
     white-space: normal;
     word-break: break-word;
     text-overflow: clip;
     font-size: 0.85rem;
-    line-height: 1.2;
+    line-height: 1.3;
+    padding: var(--spacing-sm);
+    vertical-align: middle;
+    /* Ensure text is fully visible */
+    overflow: visible;
+    text-align: left;
   }
 
-  /* Ensure table can expand horizontally */
+  /* Ensure table can expand horizontally to show all characters */
   .comparison-table {
-    min-width: 600px;
+    min-width: calc(var(--attr-col-mobile) + (var(--char-col-min) * 4));
+  }
+
+  /* Dynamic table width based on character count */
+  .comparison-table[data-characters="1"] {
+    min-width: calc(var(--attr-col-mobile) + var(--char-col-min));
+  }
+  
+  .comparison-table[data-characters="2"] {
+    min-width: calc(var(--attr-col-mobile) + (var(--char-col-min) * 2));
+  }
+  
+  .comparison-table[data-characters="3"] {
+    min-width: calc(var(--attr-col-mobile) + (var(--char-col-min) * 3));
+  }
+  
+  .comparison-table[data-characters="4"] {
+    min-width: calc(var(--attr-col-mobile) + (var(--char-col-min) * 4));
   }
 
   /* Improve text wrapping for character names */
@@ -928,20 +956,53 @@ section::before {
     line-height: 1.1;
     font-size: 0.75rem;
   }
+  
+  /* Additional fixes for first column visibility */
+  .comparison-table-container {
+    /* Ensure container doesn't clip content */
+    overflow: visible;
+    /* Add padding to prevent edge clipping */
+    padding-left: var(--spacing-xs);
+    padding-right: var(--spacing-xs);
+  }
+  
+  /* Improve readability of attribute names on mobile */
+  .comparison-table td:first-child {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+    /* Ensure text doesn't get cut off */
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+  }
 }
 
-/* Tablet layout (768px-1023px): max 3 characters */
+/* Tablet layout (768px-1023px): enable horizontal scrolling for all 4 characters */
 @media (min-width: 768px) and (max-width: 1023px) {
 
   .comparison-table th:first-child,
   .comparison-table td:first-child {
     width: var(--attr-col-tablet);
     min-width: var(--attr-col-tablet);
+    max-width: var(--attr-col-tablet);
   }
 
-  .comparison-table th:nth-child(5),
-  .comparison-table td:nth-child(5) {
-    display: none;
+  /* Ensure all character columns are visible on tablet */
+  .comparison-table th:nth-child(n+2),
+  .comparison-table td:nth-child(n+2) {
+    display: table-cell;
+    min-width: var(--char-col-min);
+  }
+
+  .comparison-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Dynamic table width for tablet */
+  .comparison-table[data-characters="4"] {
+    min-width: calc(var(--attr-col-tablet) + (var(--char-col-min) * 4));
   }
 }
 
@@ -980,12 +1041,26 @@ section::before {
 
   .comparison-table[data-characters="1"] th:not(:first-child),
   .comparison-table[data-characters="1"] td:not(:first-child) {
-    width: calc((100% - var(--attr-col-mobile)) / 1);
+    width: var(--char-col-min);
+    min-width: var(--char-col-min);
   }
 
   .comparison-table[data-characters="2"] th:not(:first-child),
   .comparison-table[data-characters="2"] td:not(:first-child) {
-    width: calc((100% - var(--attr-col-mobile)) / 2);
+    width: var(--char-col-min);
+    min-width: var(--char-col-min);
+  }
+
+  .comparison-table[data-characters="3"] th:not(:first-child),
+  .comparison-table[data-characters="3"] td:not(:first-child) {
+    width: var(--char-col-min);
+    min-width: var(--char-col-min);
+  }
+
+  .comparison-table[data-characters="4"] th:not(:first-child),
+  .comparison-table[data-characters="4"] td:not(:first-child) {
+    width: var(--char-col-min);
+    min-width: var(--char-col-min);
   }
 }
 
@@ -998,6 +1073,20 @@ section::before {
 
   .comparison-table[data-characters="2"] th:not(:first-child),
   .comparison-table[data-characters="2"] td:not(:first-child) {
+    width: calc((100% - var(--attr-col-tablet)) / 2);
+  }
+
+  .comparison-table[data-characters="3"] th:not(:first-child),
+  .comparison-table[data-characters="3"] td:not(:first-child) {
+    width: calc((100% - var(--attr-col-tablet)) / 3);
+  }
+
+  .comparison-table[data-characters="4"] th:not(:first-child),
+  .comparison-table[data-characters="4"] td:not(:first-child) {
+    width: var(--char-col-min);
+    min-width: var(--char-col-min);
+  }
+}
     width: calc((100% - var(--attr-col-tablet)) / 2);
   }
 

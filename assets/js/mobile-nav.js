@@ -1,48 +1,33 @@
-// 修复版移动端导航
-(function() {
-    'use strict';
+// Mobile Navigation Toggle - Enhanced Version
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+    const mobileNavLinks = document.getElementById('mobile-nav-links');
     
-    document.addEventListener('DOMContentLoaded', function() {
-        const mobileNavToggle = document.getElementById('mobile-nav-toggle');
-        const mobileNavLinks = document.getElementById('mobile-nav-links');
+    // Create overlay element
+    const overlay = document.createElement('div');
+    overlay.className = 'mobile-nav-overlay';
+    overlay.id = 'mobile-nav-overlay';
+    document.body.appendChild(overlay);
+    
+    if (mobileNavToggle && mobileNavLinks) {
         
-        if (!mobileNavToggle || !mobileNavLinks) {
-            console.warn('移动端导航元素未找到');
-            return;
-        }
-
-        // 创建遮罩层
-        let overlay = document.getElementById('mobile-nav-overlay');
-        if (!overlay) {
-            overlay = document.createElement('div');
-            overlay.className = 'mobile-nav-overlay';
-            overlay.id = 'mobile-nav-overlay';
-            document.body.appendChild(overlay);
-        }
-
         function openMenu() {
             mobileNavLinks.classList.add('show');
             overlay.classList.add('show');
             mobileNavToggle.setAttribute('aria-expanded', 'true');
             mobileNavToggle.innerHTML = '✕ Close';
             document.body.style.overflow = 'hidden';
-            
-            // 添加调试日志
-            console.log('菜单已打开');
         }
-
+        
         function closeMenu() {
             mobileNavLinks.classList.remove('show');
             overlay.classList.remove('show');
             mobileNavToggle.setAttribute('aria-expanded', 'false');
             mobileNavToggle.innerHTML = '☰ Menu';
             document.body.style.overflow = '';
-            
-            // 添加调试日志
-            console.log('菜单已关闭');
         }
-
-        // 切换菜单
+        
+        // Toggle menu on button click
         mobileNavToggle.addEventListener('click', function(e) {
             e.stopPropagation();
             const isExpanded = mobileNavLinks.classList.contains('show');
@@ -53,50 +38,41 @@
                 openMenu();
             }
         });
-
-        // 点击遮罩关闭
+        
+        // Close menu when clicking overlay
         overlay.addEventListener('click', closeMenu);
-
-        // 点击链接导航 - 修复版本
-        const navLinks = mobileNavLinks.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                console.log('链接被点击:', this.href);
-                // 不阻止默认行为，让浏览器正常跳转
-                closeMenu();
-                // 确保没有阻止事件传播
-            });
-        });
-
-        // 点击外部关闭 - 使用setTimeout避免冲突
+        
+        // Close menu when clicking outside
         document.addEventListener('click', function(event) {
-            setTimeout(() => {
-                if (!mobileNavToggle.contains(event.target) && 
-                    !mobileNavLinks.contains(event.target) && 
-                    mobileNavLinks.classList.contains('show')) {
-                    closeMenu();
-                }
-            }, 0);
-        });
-
-        // ESC键关闭
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && mobileNavLinks.classList.contains('show')) {
+            if (!mobileNavToggle.contains(event.target) && 
+                !mobileNavLinks.contains(event.target) && 
+                mobileNavLinks.classList.contains('show')) {
                 closeMenu();
             }
         });
-
-        // 窗口大小改变时关闭
+        
+        // Close menu when clicking on a nav link
+        const navLinks = mobileNavLinks.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+        
+        // Handle window resize
         window.addEventListener('resize', function() {
             if (window.innerWidth > 768) {
                 closeMenu();
             }
         });
-
-        // 初始化状态
+        
+        // Handle escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileNavLinks.classList.contains('show')) {
+                closeMenu();
+            }
+        });
+        
+        // Initialize button state
         mobileNavToggle.setAttribute('aria-expanded', 'false');
         mobileNavToggle.innerHTML = '☰ Menu';
-        
-        console.log('移动端导航已初始化完成');
-    });
-})();
+    }
+});

@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Block documentation files from indexing
+Disallow: /docs/
+Disallow: /.git/
+Disallow: /.kiro/
+Disallow: /.vscode/
+Disallow: /scripts/
+
+# Allow important assets
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Block specific file types that shouldn't be indexed
+Disallow: *.json$
+Disallow: *.md$
+Disallow: *.sh$
+
+# Sitemap location
+Sitemap: https://umamusumeguide.co/sitemap.xml
