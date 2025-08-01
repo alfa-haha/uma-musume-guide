@@ -4824,27 +4824,7 @@ e Navigation Styles - Fixed Version */
   flex-wrap: wrap;
 }
 
-/* Desktop: Show links, hide toggle */
-@media (min-width: 769px) {
-  .mobile-nav-toggle {
-    display: none !important;
-  }
-  
-  .mobile-nav-links {
-    display: flex !important;
-    position: static !important;
-    background: none !important;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    box-shadow: none !important;
-    backdrop-filter: none !important;
-    transform: none !important;
-    gap: var(--spacing-md);
-    flex-wrap: wrap;
-    opacity: 1 !important;
-  }
-}
+/* Removed duplicate desktop rules - consolidated below */
 
 /* Mobile: Hide links by default, show toggle */
 @media (max-width: 768px) {
@@ -5144,19 +5124,36 @@ le nav links text wrapping */
   }
 }
 
-/* Desktop nav-controls - ensure proper display */
+/* Desktop nav-controls - show theme toggle only */
 @media (min-width: 769px) {
   .nav-controls {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: var(--spacing-md) !important;
+  }
+  
+  .mobile-nav-toggle {
     display: none !important;
   }
-}/* 
-Desktop navigation - show links directly */
+  
+  .theme-toggle {
+    display: flex !important;
+  }
+}
+
+/* Desktop navigation - show links and theme toggle */
 @media (min-width: 769px) {
   .main-nav {
     display: flex !important;
     justify-content: center !important;
+    align-items: center !important;
     gap: var(--spacing-md) !important;
     flex-wrap: wrap !important;
+  }
+  
+  .nav-controls {
+    order: 2;
   }
   
   .mobile-nav-links {
@@ -5173,10 +5170,7 @@ Desktop navigation - show links directly */
     flex-wrap: wrap !important;
     opacity: 1 !important;
     pointer-events: auto !important;
-  }
-  
-  .mobile-nav-toggle {
-    display: none !important;
+    order: 1;
   }
 }/
 * FINAL MOBILE FOOTER CENTER ALIGNMENT - Override all conflicts */
