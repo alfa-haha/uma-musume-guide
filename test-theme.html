@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Toggle Test</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        (function() {
+            const theme = localStorage.getItem('uma-musume-theme') || 
+                         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Theme Toggle Test</h1>
+            <nav aria-label="Main navigation" class="main-nav">
+                <div class="nav-controls">
+                    <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                        ☰ Menu
+                    </button>
+                    <!-- Theme toggle will be inserted here by JavaScript -->
+                </div>
+                <div class="mobile-nav-links" id="mobile-nav-links">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/beginner-guide" class="nav-link">Beginner Guide</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section>
+            <div class="container">
+                <h2>Testing Theme Toggle</h2>
+                <p>This page tests the theme toggle functionality across different screen sizes.</p>
+                <ul>
+                    <li>Desktop: Should show theme toggle button, hide mobile menu button</li>
+                    <li>Mobile: Should show both theme toggle and mobile menu buttons</li>
+                    <li>Theme toggle should work on all screen sizes</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/mobile-nav.js"></script>
+</body>
+</html>

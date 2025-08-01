@@ -53,6 +53,12 @@
     
     // Create theme toggle button
     function createThemeToggle() {
+        // Check if theme toggle already exists
+        const existingToggle = document.querySelector('.theme-toggle');
+        if (existingToggle) {
+            return existingToggle;
+        }
+
         const button = document.createElement('button');
         button.className = 'theme-toggle';
         button.setAttribute('aria-label', 'Toggle theme');
