@@ -59,7 +59,7 @@
           "type": "acceleration"
         }
       ],
-      "image": "assets/images/characters/portraits/special_week_original_portraits.jpg",
+      "image": "assets/images/characters/portraits/special_week_original_portrait.jpg",
       "thumbnail": "assets/images/characters/thumbnails/special_week_original_thumb.jpg"
     },
     {
@@ -121,7 +121,7 @@
           "type": "speed_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/silence_suzuka_original_portraits.jpg",
+      "image": "assets/images/characters/portraits/silence_suzuka_original_portrait.jpg",
       "thumbnail": "assets/images/characters/thumbnails/silence_suzuka_original_thumb.jpg"
     },
     {
@@ -183,7 +183,7 @@
           "type": "power_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/tokai_teio_original_portraits.jpg",
+      "image": "assets/images/characters/portraits/tokai_teio_anime_collab_portrait.jpg",
       "thumbnail": "assets/images/characters/thumbnails/tokai_teio_original_thumb.jpg"
     },
     {
@@ -245,7 +245,7 @@
           "type": "efficiency"
         }
       ],
-      "image": "assets/images/characters/portraits/mejiro_mcqueen_original_portraits.jpg",
+      "image": "assets/images/characters/portraits/mejiro_mcqueen_anime_collab_portrait.jpg",
       "thumbnail": "assets/images/characters/thumbnails/mejiro_mcqueen_original_thumb.jpg"
     },
     {
@@ -307,7 +307,7 @@
           "type": "power_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/gold_ship_original_portraits.jpg",
+      "image": "assets/images/characters/portraits/gold_ship_original_portrait.jpg",
       "thumbnail": "assets/images/characters/thumbnails/gold_ship_original_thumb.jpg"
     },
     {
@@ -369,7 +369,7 @@
           "type": "speed_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/vodka_original_portraits.jpg",
+      "image": "assets/images/characters/portraits/vodka_original_portrait.jpg",
       "thumbnail": "assets/images/characters/thumbnails/vodka_original_thumb.jpg"
     },
     {
@@ -431,8 +431,8 @@
           "type": "efficiency"
         }
       ],
-      "image": "assets/images/characters/portraits/air_groove_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/air_groove_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Air_Groove_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Air_Groove_original_thumb.jpg"
     },
     {
       "id": "agnes_tachyon_original",
@@ -493,8 +493,8 @@
           "type": "speed_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/agnes_tachyon_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/agnes_tachyon_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Agnes_Tachyon_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Agnes_Tachyon_original_thumb.jpg"
     },
     {
       "id": "biwa_hayahide_original",
@@ -555,8 +555,8 @@
           "type": "guts_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/biwa_hayahide_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/biwa_hayahide_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Biwa_Hayahide_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Biwa_Hayahide_original_thumb.jpg"
     },
     {
       "id": "curren_chan_original",
@@ -617,8 +617,8 @@
           "type": "speed_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/curren_chan_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/curren_chan_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Curren_Chan_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Curren_Chan_original_thumb.jpg"
     },
     {
       "id": "daiwa_scarlet_original",
@@ -679,8 +679,8 @@
           "type": "speed_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/daiwa_scarlet_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/daiwa_scarlet_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Daiwa_Scarlet_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Daiwa_Scarlet_original_thumb.jpg"
     },
     {
       "id": "el_condor_pasa_original",
@@ -741,8 +741,8 @@
           "type": "guts_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/el_condor_pasa_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/el_condor_pasa_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/El_Condor_Pasa_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/El_Condor_Pasa_original_thumb.jpg"
     },
     {
       "id": "maruzensky_original",
@@ -803,8 +803,8 @@
           "type": "speed_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/maruzensky_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/maruzensky_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Maruzensky_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Maruzensky_original_thumb.jpg"
     },
     {
       "id": "grass_wonder_original",
@@ -865,8 +865,8 @@
           "type": "efficiency"
         }
       ],
-      "image": "assets/images/characters/portraits/grass_wonder_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/grass_wonder_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Grass_Wonder_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Grass_Wonder_original_thumb.jpg"
     },
     {
       "id": "haru_urara_original",
@@ -927,8 +927,8 @@
           "type": "efficiency"
         }
       ],
-      "image": "assets/images/characters/portraits/haru_urara_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/haru_urara_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Haru_Urara_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Haru_Urara_original_thumb.jpg"
     },
     {
       "id": "king_halo_original",
@@ -989,8 +989,8 @@
           "type": "guts_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/king_halo_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/king_halo_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/King_Halo_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/King_Halo_original_thumb.jpg"
     },
     {
       "id": "matikanefukukitaru_original",
@@ -1051,8 +1051,8 @@
           "type": "stamina_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/matikanefukukitaru_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/matikanefukukitaru_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Matikanefukukitaru_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Matikanefukukitaru_original_thumb.jpg"
     },
     {
       "id": "mayano_top_gun_original",
@@ -1113,8 +1113,8 @@
           "type": "stamina_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/mayano_top_gun_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/mayano_top_gun_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Mayano_Top_Gun_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Mayano_Top_Gun_original_thumb.jpg"
     },
     {
       "id": "mejiro_mcqueen_anime_collab",
@@ -1175,7 +1175,7 @@
           "type": "wisdom_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/mejiro_mcqueen_anime_collab_portraits.jpg",
+      "image": "assets/images/characters/portraits/mejiro_mcqueen_anime_collab_portrait.jpg",
       "thumbnail": "assets/images/characters/thumbnails/mejiro_mcqueen_anime_collab_thumb.jpg"
     },
     {
@@ -1237,8 +1237,8 @@
           "type": "guts_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/mejiro_ryan_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/mejiro_ryan_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Mejiro_Ryan_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Mejiro_Ryan_original_thumb.jpg"
     },
     {
       "id": "mihono_bourbon_original",
@@ -1299,8 +1299,8 @@
           "type": "speed_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/mihono_bourbon_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/mihono_bourbon_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Mihono_Bourbon_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Mihono_Bourbon_original_thumb.jpg"
     },
     {
       "id": "nice_nature_original",
@@ -1361,8 +1361,8 @@
           "type": "wisdom_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/nice_nature_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/nice_nature_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Nicenaturegame_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Nice_nature_original_thumb.jpg"
     },
     {
       "id": "oguri_cap_original",
@@ -1423,8 +1423,8 @@
           "type": "guts_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/oguri_cap_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/oguri_cap_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Oguri_Cap_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Oguri_Cap_original_thumb.jpg"
     },
     {
       "id": "rice_shower_original",
@@ -1485,8 +1485,8 @@
           "type": "stamina_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/rice_shower_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/rice_shower_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Rice_Shower_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Rice_Shower_original_thumb.jpg"
     },
     {
       "id": "sakura_bakushin_o_original",
@@ -1547,8 +1547,8 @@
           "type": "wisdom_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/sakura_bakushin_o_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/sakura_bakushin_o_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Sakura_Bakushin_O_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Sakura_Bakushin_O_original_thumb.jpg"
     },
     {
       "id": "super_creek_original",
@@ -1609,8 +1609,8 @@
           "type": "stamina_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/super_creek_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/super_creek_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Super_Creek_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Super_Creek_original_thumb.jpg"
     },
     {
       "id": "symboli_rudolf_original",
@@ -1671,8 +1671,8 @@
           "type": "guts_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/symboli_rudolf_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/symboli_rudolf_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Symboli_Rudolf_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Symboli_Rudolf_original_thumb.jpg"
     },
     {
       "id": "taiki_shuttle_original",
@@ -1733,8 +1733,8 @@
           "type": "wisdom_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/taiki_shuttle_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/taiki_shuttle_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Taiki_Shuttle_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Taiki_Shuttle_original_thumb.jpg"
     },
     {
       "id": "tm_opera_o_original",
@@ -1795,8 +1795,8 @@
           "type": "wisdom_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/tm_opera_o_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/tm_opera_o_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/T.M._Opera_O_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/TM_Opera_O_original_thumb.jpg"
     },
     {
       "id": "tokai_teio_anime_collab",
@@ -1857,7 +1857,7 @@
           "type": "guts_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/tokai_teio_anime_collab_portraits.jpg",
+      "image": "assets/images/characters/portraits/tokai_teio_anime_collab_portrait.jpg",
       "thumbnail": "assets/images/characters/thumbnails/tokai_teio_anime_collab_thumb.jpg"
     },
     {
@@ -1919,8 +1919,8 @@
           "type": "stamina_boost"
         }
       ],
-      "image": "assets/images/characters/portraits/winning_ticket_original_portraits.jpg",
-      "thumbnail": "assets/images/characters/thumbnails/winning_ticket_original_thumb.jpg"
+      "image": "assets/images/characters/portraits/Winning_Ticket_original_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/Winning_Ticket_original_thumb.jpg"
     }
   ],
   "metadata": {

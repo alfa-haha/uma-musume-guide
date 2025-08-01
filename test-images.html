@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Loading Test - Uma Musume Guide</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .test-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .test-item {
+            padding: 1rem;
+            border: 2px solid #FFB6C1;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .test-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+        .status {
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #f8d7da; color: #721c24; }
+        .status.loading { background: #fff3cd; color: #856404; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>图片加载测试</h1>
+        <p>这个页面用于测试角色图片的加载情况，包括大小写敏感性和错误处理。</p>
+        
+        <div class="test-grid" id="test-grid">
+            <!-- 测试项目将通过JavaScript动态生成 -->
+        </div>
+    </div>
+
+    <script>
+        // 测试用的图片路径（包含一些故意的错误）
+        const testImages = [
+            {
+                name: "Special Week (正确)",
+                path: "assets/images/characters/thumbnails/special_week_original_thumb.jpg"
+            },
+            {
+                name: "Special Week (大写)",
+                path: "assets/images/characters/thumbnails/Special_Week_original_thumb.jpg"
+            },
+            {
+                name: "Silence Suzuka (正确)",
+                path: "assets/images/characters/thumbnails/silence_suzuka_original_thumb.jpg"
+            },
+            {
+                name: "Gold Ship (正确)",
+                path: "assets/images/characters/thumbnails/gold_ship_original_thumb.jpg"
+            },
+            {
+                name: "Gold Ship (大写)",
+                path: "assets/images/characters/thumbnails/Gold_Ship_original_thumb.jpg"
+            },
+            {
+                name: "不存在的图片",
+                path: "assets/images/characters/thumbnails/nonexistent_character.jpg"
+            },
+            {
+                name: "Agnes Tachyon (正确)",
+                path: "assets/images/characters/thumbnails/Agnes_Tachyon_original_thumb.jpg"
+            },
+            {
+                name: "Agnes Tachyon (小写)",
+                path: "assets/images/characters/thumbnails/agnes_tachyon_original_thumb.jpg"
+            }
+        ];
+
+        function createTestItem(testImage) {
+            const item = document.createElement('div');
+            item.className = 'test-item';
+            
+            const img = document.createElement('img');
+            img.className = 'character-thumbnail';
+            img.alt = testImage.name;
+            
+            const name = document.createElement('div');
+            name.textContent = testImage.name;
+            name.style.fontWeight = 'bold';
+            name.style.marginBottom = '0.5rem';
+            
+            const path = document.createElement('div');
+            path.textContent = testImage.path;
+            path.style.fontSize = '0.8rem';
+            path.style.color = '#666';
+            path.style.wordBreak = 'break-all';
+            
+            const status = document.createElement('div');
+            status.className = 'status loading';
+            status.textContent = '加载中...';
+            
+            item.appendChild(img);
+            item.appendChild(name);
+            item.appendChild(path);
+            item.appendChild(status);
+            
+            // 设置图片加载事件
+            img.onload = function() {
+                status.className = 'status success';
+                status.textContent = '✅ 加载成功';
+            };
+            
+            img.onerror = function() {
+                status.className = 'status error';
+                status.textContent = '❌ 加载失败';
+                
+                // 尝试备用路径
+                if (!img.dataset.fallbackTried) {
+                    img.dataset.fallbackTried = 'true';
+                    status.textContent = '🔄 尝试备用路径...';
+                    
+                    // 尝试不同的大小写变体
+                    const originalPath = testImage.path;
+                    const fileName = originalPath.split('/').pop();
+                    const basePath = originalPath.substring(0, originalPath.lastIndexOf('/'));
+                    
+                    // 尝试首字母大写的版本
+                    const capitalizedFileName = fileName.split('_').map(part => 
+                        part.charAt(0).toUpperCase() + part.slice(1)
+                    ).join('_');
+                    
+                    const fallbackPath = `${basePath}/${capitalizedFileName}`;
+                    
+                    const fallbackImg = new Image();
+                    fallbackImg.onload = function() {
+                        img.src = fallbackPath;
+                        status.className = 'status success';
+                        status.textContent = '✅ 备用路径成功';
+                    };
+                    fallbackImg.onerror = function() {
+                        status.className = 'status error';
+                        status.textContent = '❌ 所有路径都失败';
+                        img.src = 'assets/images/placeholders/placeholder_thumbnail.svg';
+                    };
+                    fallbackImg.src = fallbackPath;
+                }
+            };
+            
+            // 开始加载图片
+            img.src = testImage.path;
+            
+            return item;
+        }
+
+        // 生成测试项目
+        const testGrid = document.getElementById('test-grid');
+        testImages.forEach(testImage => {
+            testGrid.appendChild(createTestItem(testImage));
+        });
+    </script>
+</body>
+</html>

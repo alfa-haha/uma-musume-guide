@@ -1,208 +1,151 @@
-# 🐴 Uma Musume Guide
+# Uma Musume Guide
 
-> Your ultimate resource for Uma Musume Pretty Derby character comparison and beginner guides
+一个全面的Uma Musume Pretty Derby角色比较工具和初学者指南。
 
-[![Website](https://img.shields.io/badge/Website-umamusumeguide.co-FF69B4)](https://umamusumeguide.co/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+## 🚀 功能特性
 
-## ✨ Features
+- **角色比较工具**: 并排比较最多4个Uma Musume角色
+- **高级筛选**: 按类型、稀有度和名称搜索角色
+- **响应式设计**: 在所有设备上完美运行
+- **图片优化**: 智能图片加载和错误处理
+- **专家指南**: 详细的初学者指南和策略
 
-### 🔍 Character Comparison Tool
-- **Side-by-side comparison** of up to 4 Uma Musume characters
-- **Detailed stats analysis** including Speed, Stamina, Power, Guts, and Wisdom
-- **Aptitude ratings** for different track types, distances, and running styles
-- **Skills overview** with unique skills and awakening abilities
-- **Advanced filtering** by character type, rarity, and attributes
-- **Search functionality** with both English and Japanese name support
+## 🛠️ 技术栈
 
-### 📚 Comprehensive Beginner Guides
-- **Complete starter guide** for new players (2025 Edition)
-- **Gameplay mechanics** explained in detail
-- **Daily optimization** strategies and must-do tasks
-- **Training tips** and character building advice
-- **Team composition** and Circle management
+- **前端**: HTML5, CSS3, JavaScript (ES6+)
+- **样式**: 自定义CSS，Uma Musume主题色彩
+- **图片**: 优化的JPG/PNG格式，SVG占位符
+- **数据**: JSON格式的角色数据
 
-### 🎨 User Experience
-- **Responsive design** optimized for desktop and mobile
-- **Uma Musume themed** pink color palette
-- **Image optimization** with WebP support and lazy loading
-- **SEO optimized** with structured data and meta tags
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Modern web browser with JavaScript enabled
-- Web server (for local development)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/uma-musume-guide.git
-   cd uma-musume-guide
-   ```
-
-2. **Serve the files**
-   ```bash
-   # Using Python 3
-   python -m http.server 8000
-   
-   # Using Node.js (with http-server)
-   npx http-server
-   
-   # Using PHP
-   php -S localhost:8000
-   ```
-
-3. **Open in browser**
-   ```
-   http://localhost:8000
-   ```
-
-## 📁 Project Structure
+## 📁 项目结构
 
 ```
 uma-musume-guide/
 ├── assets/
 │   ├── css/
-│   │   └── style.css              # Main stylesheet with Uma Musume theme
+│   │   └── style.css              # 主样式文件
 │   ├── js/
-│   │   └── main.js                # Core JavaScript functionality
+│   │   ├── main.js                # 主JavaScript文件
+│   │   ├── theme-toggle.js        # 主题切换功能
+│   │   ├── mobile-nav.js          # 移动端导航
+│   │   └── back-to-top.js         # 返回顶部功能
 │   ├── data/
-│   │   └── characters.json        # Character database
+│   │   └── characters.json        # 角色数据
 │   └── images/
 │       ├── characters/
-│       │   ├── portraits/         # Character portrait images
-│       │   └── thumbnails/        # Character thumbnail images
-│       └── blog/
-│           ├── covers/            # Blog post cover images
-│           └── thumbnails/        # Blog post thumbnails
-├── docs/
-│   ├── uma_musume_beginner_guide.md
-│   ├── How to Play The Uma Musume?.md
-│   └── Daily Must-Do Guide for New Uma Musume Trainers.md
-├── index.html                     # Main page with character comparison
-├── beginner-guide.html           # Beginner guides collection page
-├── blog-*.html                   # Individual blog post pages
-└── README.md                     # This file
+│       │   ├── thumbnails/        # 角色缩略图
+│       │   ├── portraits/         # 角色肖像图
+│       │   └── full/              # 全尺寸图片
+│       ├── placeholders/          # 占位符图片
+│       ├── blog/                  # 博客相关图片
+│       ├── meta/                  # SEO元数据图片
+│       └── ui/                    # UI元素图片
+├── scripts/
+│   ├── fix-image-paths.js         # 图片路径修复脚本
+│   ├── validate-images.js         # 图片验证脚本
+│   └── update-data.sh             # 数据更新脚本
+├── docs/                          # 文档文件
+├── index.html                     # 主页面
+├── beginner-guide.html            # 初学者指南页面
+└── test-images.html               # 图片测试页面
 ```
 
-## 🎮 Character Data Structure
+## 🔧 开发和部署
 
-Each character in `assets/data/characters.json` contains:
+### 本地开发
+
+1. 克隆仓库
+2. 使用本地服务器运行（如Live Server）
+3. 访问 `index.html`
+
+### 图片路径问题解决
+
+如果遇到图片加载问题，特别是在服务器环境下：
+
+```bash
+# 运行完整的数据更新和验证脚本
+./scripts/update-data.sh
+
+# 或者单独运行各个脚本
+node scripts/fix-image-paths.js      # 修复路径大小写问题
+node scripts/validate-images.js      # 验证所有图片文件存在
+```
+
+### 常见问题
+
+#### 为什么本地能正常显示但服务器上图片无法加载？
+
+这是一个典型的**文件名大小写敏感性**问题：
+
+- **本地环境** (macOS/Windows): 文件系统通常对大小写不敏感
+- **服务器环境** (Linux): 文件系统对大小写敏感
+
+**解决方案**:
+1. 运行 `./scripts/update-data.sh` 自动修复所有路径问题
+2. 确保JSON数据中的文件名与实际文件名完全匹配
+3. 使用我们的图片错误处理机制作为备用方案
+
+#### 图片加载优化
+
+项目包含以下图片优化功能：
+
+- **懒加载**: 只在需要时加载图片
+- **WebP支持**: 自动检测并使用WebP格式
+- **错误处理**: 自动尝试备用格式和路径
+- **占位符**: 加载失败时显示友好的占位符
+- **渐进式加载**: 先显示低质量版本，再加载高质量版本
+
+## 📊 数据格式
+
+角色数据存储在 `assets/data/characters.json` 中，包含：
 
 ```json
 {
-  "id": "character_id",
-  "name": "Character Name",
-  "nameJp": "キャラクター名",
-  "version": "Original",
-  "rarity": 3,
-  "type": "speed",
-  "stats": {
-    "speed": 85,
-    "stamina": 70,
-    "power": 75,
-    "guts": 80,
-    "wisdom": 65
-  },
-  "bonuses": {
-    "speed": 20,
-    "stamina": 0,
-    "power": 0,
-    "guts": 10,
-    "wisdom": 0
-  },
-  "aptitudes": {
-    "turf": "A",
-    "dirt": "G",
-    "short": "F",
-    "mile": "C",
-    "medium": "A",
-    "long": "A",
-    "front": "G",
-    "pace": "A",
-    "late": "A",
-    "end": "C"
-  },
-  "uniqueSkill": {
-    "name": "Skill Name",
-    "description": "Skill description"
-  },
-  "skills": [...],
-  "image": "path/to/portrait.jpg",
-  "thumbnail": "path/to/thumbnail.jpg"
+  "characters": [
+    {
+      "id": "character_id",
+      "name": "Character Name",
+      "nameJp": "日本語名前",
+      "version": "Original",
+      "rarity": 3,
+      "type": "speed",
+      "stats": { ... },
+      "skills": [ ... ],
+      "image": "assets/images/characters/portraits/character_portrait.jpg",
+      "thumbnail": "assets/images/characters/thumbnails/character_thumb.jpg"
+    }
+  ]
 }
 ```
 
-## 🛠️ Development
+## 🎨 主题和样式
 
-### Adding New Characters
+项目使用Uma Musume的标志性粉色主题：
 
-1. Add character data to `assets/data/characters.json`
-2. Add character images to appropriate directories:
-   - Portrait: `assets/images/characters/portraits/`
-   - Thumbnail: `assets/images/characters/thumbnails/`
-3. Follow the existing naming convention: `character_id_version_type.jpg`
+- **主色调**: #FF69B4 (Hot Pink)
+- **辅助色**: #FFB6C1 (Light Pink)
+- **背景色**: #FFE4E1 (Misty Rose)
+- **字体**: Noto Sans, Poppins, Quicksand
 
-### Customizing Styles
+## 🚀 部署
 
-The project uses CSS custom properties for easy theming:
+1. 运行预部署检查：
+   ```bash
+   ./scripts/update-data.sh
+   ```
 
-```css
-:root {
-  --primary-pink: #FF69B4;
-  --light-pink: #FFB6C1;
-  --soft-pink: #FFC0CB;
-  /* ... more Uma Musume themed colors */
-}
-```
+2. 确保所有检查通过后，将文件上传到服务器
 
-### Adding New Guides
+3. 配置服务器以正确处理静态文件
 
-1. Create a new Markdown file in the `docs/` directory
-2. Add corresponding HTML page for web display
-3. Update navigation links in `index.html` and `beginner-guide.html`
+## 📝 许可证
 
-## 🌟 Contributing
+本项目仅用于教育和娱乐目的。Uma Musume Pretty Derby是Cygames的商标。
 
-We welcome contributions! Please feel free to:
+## 🤝 贡献
 
-- Report bugs and issues
-- Suggest new features
-- Add new character data
-- Improve documentation
-- Submit pull requests
-
-### Guidelines
-
-1. **Character Data**: Ensure accuracy when adding new characters
-2. **Images**: Optimize images for web (WebP preferred, fallback to JPG)
-3. **Code Style**: Follow existing JavaScript and CSS conventions
-4. **Documentation**: Update README when adding new features
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## ⚠️ Disclaimer
-
-This website is a fan-made project and is not affiliated with Cygames or Uma Musume Pretty Derby. All character names, images, and game-related content are the property of their respective owners.
-
-## 🙏 Acknowledgments
-
-- **Cygames** for creating Uma Musume Pretty Derby
-- **Uma Musume community** for inspiration and feedback
-- **Contributors** who help maintain and improve this project
-
-## 📞 Contact
-
-- **Website**: [umamusumeguide.co](https://umamusumeguide.co/)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/uma-musume-guide/issues)
+欢迎提交问题报告和功能请求！
 
 ---
 
-Made with ❤️ for the Uma Musume community
+**注意**: 如果在部署后遇到图片加载问题，请首先运行 `./scripts/update-data.sh` 脚本来自动修复路径问题。

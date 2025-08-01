@@ -206,7 +206,7 @@ const ImageOptimizer = {
         
         console.warn('Image failed to load:', originalSrc);
         
-        // Try fallback formats
+        // Try fallback formats and case variations
         this.tryFallbackFormats(img, originalSrc)
             .then(fallbackSrc => {
                 if (fallbackSrc) {
@@ -221,19 +221,54 @@ const ImageOptimizer = {
             });
     },
     
-    // Try fallback image formats
+    // Try fallback image formats and case variations
     async tryFallbackFormats(img, originalSrc) {
-        const baseSrc = originalSrc.replace(/\.(webp|jpg|jpeg|png)$/i, '');
-        const formats = ['jpg', 'png']; // Fallback formats
+        const pathParts = originalSrc.split('/');
+        const fileName = pathParts[pathParts.length - 1];
+        const basePath = pathParts.slice(0, -1).join('/');
+        const baseName = fileName.replace(/\.(webp|jpg|jpeg|png)$/i, '');
+        const extension = fileName.match(/\.(webp|jpg|jpeg|png)$/i)?.[1] || 'jpg';
         
-        for (const format of formats) {
-            const fallbackSrc = `${baseSrc}.${format}`;
-            if (await this.testImageExists(fallbackSrc)) {
+        // Try different case variations and formats
+        const variations = [
+            // Original format variations
+            `${basePath}/${baseName}.${extension}`,
+            `${basePath}/${baseName}.jpg`,
+            `${basePath}/${baseName}.png`,
+            
+            // Case variations
+            `${basePath}/${this.toPascalCase(baseName)}.${extension}`,
+            `${basePath}/${this.toPascalCase(baseName)}.jpg`,
+            `${basePath}/${this.toPascalCase(baseName)}.png`,
+            
+            // Lowercase variations
+            `${basePath}/${baseName.toLowerCase()}.${extension}`,
+            `${basePath}/${baseName.toLowerCase()}.jpg`,
+            `${basePath}/${baseName.toLowerCase()}.png`,
+            
+            // Remove WebP and try JPG
+            originalSrc.replace(/\.webp$/i, '.jpg'),
+            originalSrc.replace(/\.webp$/i, '.png')
+        ];
+        
+        // Remove duplicates
+        const uniqueVariations = [...new Set(variations)];
+        
+        for (const fallbackSrc of uniqueVariations) {
+            if (fallbackSrc !== originalSrc && await this.testImageExists(fallbackSrc)) {
+                console.log(`Found fallback image: ${originalSrc} -> ${fallbackSrc}`);
                 return fallbackSrc;
             }
         }
         
         return null;
+    },
+    
+    // Convert string to PascalCase (for filename variations)
+    toPascalCase(str) {
+        return str.split(/[_\s-]+/)
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+            .join('_');
     },
     
     // Test if image exists
