@@ -4,9 +4,9 @@ const fs = require('fs');
 const path = require('path');
 
 const blogFiles = [
-    'blog-beginner-guide.html',
-    'blog-daily-guide.html', 
-    'blog-how-to-play.html'
+    'guides/beginner-guide-2025.html',
+    'guides/daily-tasks-new-trainers.html', 
+    'guides/how-to-play-uma-musume.html'
 ];
 
 console.log('🔍 Validating blog page resource paths...\n');
@@ -41,10 +41,10 @@ blogFiles.forEach(file => {
     
     // Check for correct relative paths
     const relativePaths = [
-        { pattern: /href="assets\/css\/style\.css"/, description: 'CSS relative path' },
-        { pattern: /src="assets\/images\/blog\/covers\//, description: 'Cover image relative paths' },
-        { pattern: /src="assets\/js\//, description: 'JavaScript relative paths' },
-        { pattern: /href="favicon\.ico"/, description: 'Favicon relative path' }
+        { pattern: /href="\.\.\/assets\/css\/style\.css"/, description: 'CSS relative path' },
+        { pattern: /src="\.\.\/assets\/images\/blog\/covers\//, description: 'Cover image relative paths' },
+        { pattern: /src="\.\.\/assets\/js\//, description: 'JavaScript relative paths' },
+        { pattern: /href="\.\.\/favicon\.ico"/, description: 'Favicon relative path' }
     ];
     
     relativePaths.forEach(({ pattern, description }) => {
